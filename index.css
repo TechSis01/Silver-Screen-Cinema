@@ -1,0 +1,253 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+    background-color: #070111;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+/*========================NAVIGATION=================================*/
+
+nav {
+    display: flex;
+    width: 85%;
+    margin: 1% 3% 0% 7%;
+    position: absolute;
+    justify-content: space-between;
+    z-index: 1;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.link {
+    font-size: 1.15em;
+    font-weight: bold;
+}
+
+.brand-name {
+    font-family: 'Russo One', sans-serif;
+    font-size: 2.5rem;
+    color: #e70404;
+}
+
+span {
+    font-size: 1.7rem;
+}
+
+.brand-screen {
+    color: #A7B3B1;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #A7B3B1;
+    cursor: pointer;
+}
+
+.link:hover {
+    cursor: pointer;
+    color: #e70404;
+    ;
+}
+
+video {
+    width: 100%;
+    margin-bottom: 0;
+    z-index: -1;
+}
+
+
+/* 
+.socials {
+    margin: 2% 3%;
+    bottom: 10%;
+    width: 20%;
+    font-size: 1.8em;
+    position: absolute;
+} */
+
+.fa-brands:hover {
+    color: #D72508;
+}
+
+.fa-brands {
+    margin-right: 10%;
+    color: white;
+}
+
+
+/*==========================================================CAST PROGRESS BAR========================================================*/
+
+progress {
+    height: 2.5px;
+    width: 96%;
+}
+
+progress[value] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+progress[value]::-webkit-progress-value {
+    background-color: #880909;
+}
+
+
+/*==================================CURRENT MOVIES==========================*/
+
+.current-movies {
+    background-color: #070111;
+    padding: 0% 3% 0% 3%;
+    line-height: 0;
+}
+
+.current-movies h3 {
+    color: #A7B3B1;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.current-movies-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+}
+
+.movie {
+    width: 200px;
+}
+
+.current-movies p {
+    color: #ced4da;
+}
+
+
+/* 
+hr {
+    height: 2px;
+    border-color: #D72508;
+    background-color: #D72508;
+    margin-right: 50%;
+} */
+
+#more {
+    text-align: end;
+}
+
+.current-movies a {
+    text-decoration: none;
+    color: #D72508;
+}
+
+
+/*//////////////////////////////////////COMING SOON SECTION//////////////////////////////////////*/
+
+.movies-coming-soon {
+    padding: 3% 0 0 3%;
+    /* background-image: url(/movies/background22.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    opacity:0.8;
+    box-shadow: 5px 2px 10px 20px #070111 inset;*/
+}
+
+.movies-coming-soon h3 {
+    color: #ced4da;
+    font-size: 2.5rem;
+}
+
+.movies-coming-soon p {
+    color: #ced4da;
+}
+
+
+/*///////////////////////////////////NEWS BOX///////////////////////////////////*/
+
+.news {
+    padding-top: 2%;
+}
+
+.news-box {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5%;
+}
+
+.news-info {
+    width: 300px;
+}
+
+.news-para {
+    color: #ced4da;
+    font-size: 1.3rem;
+}
+
+.news h4 {
+    text-align: center;
+    color: #ced4da;
+    font-size: 2.5rem;
+}
+
+
+/*//////////////////////////////////FOOTER////////////////////////////////////////*/
+
+.footer {
+    font-family: 'Russo One', sans-serif;
+    margin-top: 5%;
+}
+
+.footer span {
+    color: #D72508;
+    font-size: 2.0rem;
+}
+
+.footer-one {
+    display: flex;
+    justify-content: space-between;
+    color: #A7B3B1;
+    padding: 5% 3% 5% 3%;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    padding-left: 15%;
+    font-size: 1.4em;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #A7B3B1;
+}
+
+.footer-social {
+    width: 25%;
+    color: white;
+}
+
+.copy-wright {
+    text-align: center;
+    font-size: 1.3em;
+    color: #6d7275;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.6em;
+}
+
+.footer a:hover {
+    transform: scale(1, 1.05);
+    transition-delay: 0.0001s;
+    color: #D72508;
+}

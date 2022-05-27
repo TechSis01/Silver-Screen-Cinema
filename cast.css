@@ -1,0 +1,508 @@
+/*==========================================================UNIVERSAL SELECTOR==============================================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #070111;
+}
+
+
+/*==========================================================NAVIGATION=====================================================*/
+
+.navigation button .navbar-toggler-icon {
+    font-size: 1.2em;
+}
+
+.navigation {
+    display: flex;
+    padding-top: 2%;
+    font-family: 'Noto Sans', sans-serif;
+    align-items: center;
+    padding-left: 5%;
+}
+
+.navigation span {
+    font-size: 1.5rem;
+    color: #e70404;
+}
+
+.brand-name {
+    font-family: 'Russo One', sans-serif;
+}
+
+.navigation a {
+    color: #A7B3B1;
+    font-size: 1.07em;
+    font-weight: bold;
+}
+
+.navigation a:hover span {
+    color: white;
+}
+
+.navbar-nav a {
+    gap: 8em;
+    margin-left: 80%;
+}
+
+.navigation a:hover {
+    transform: scale(1, 1.05);
+    transition-delay: 0.0001s;
+    color: #e70404;
+}
+
+
+/*==========================================================CAROUSEL========================================================*/
+
+.carousel-item img {
+    width: 15rem;
+}
+
+.carousel-text {
+    text-align: center;
+    border: 1px solid white;
+    color: #A7B3B1;
+}
+
+
+/*==========================================================CAST & TEXT========================================================*/
+
+.cast {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    padding: 5% 2% 0% 2%;
+    align-items: center;
+}
+
+.cast-text {
+    color: #A7B3B1;
+    padding: 1%;
+    text-align: justify;
+}
+
+.cast-text h1 {
+    font-size: 3.8rem;
+    line-height: 1.3;
+    word-spacing: 2px;
+    font-weight: bold;
+}
+
+.cast-text p {
+    font-size: 1.25rem;
+    margin-top: 2%;
+    line-height: 2;
+    word-spacing: 2px;
+}
+
+
+/*==========================================================CAST IMAGES========================================================*/
+
+.multiverse-cast-img img {
+    width: 22rem;
+}
+
+.aladdin-cast-img {
+    width: 30rem;
+}
+
+.dune-cast-img img {
+    width: 20rem;
+}
+
+.rednotice-cast-img img {
+    width: 28rem;
+}
+
+.BB-cast-img img {
+    width: 21rem;
+}
+
+.avengers-cast-img img {
+    width: 20rem;
+}
+
+.blackwidow-cast-img img {
+    width: 25rem;
+}
+
+.spiderman-cast-img img {
+    width: 23rem;
+}
+
+.harry-cast-img img {
+    width: 26rem;
+}
+
+
+/*==========================================================CAST BUTTON========================================================*/
+
+.cast-text button {
+    width: 180px;
+    margin-top: 5%;
+    padding: 10px;
+    border-radius: 5px;
+    color: #A7B3B1;
+    background-color: #fe0000;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0px;
+}
+
+.cast button:hover {
+    transform: scale(1, 1.03);
+    background-color: #3d1b74;
+    color: #A7B3B1;
+    transition: 2s;
+    transition-delay: 0.0001s;
+}
+
+
+/*==========================================================CAST PROGRESS BAR========================================================*/
+
+progress {
+    height: 3.5px;
+    width: 85%;
+}
+
+progress[value] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+progress[value]::-webkit-progress-value {
+    background-color: #29124d;
+}
+
+
+/*==========================================================FOOTER=============================================================*/
+
+.footer {
+    font-family: 'Russo One', sans-serif;
+    margin-top: 5%;
+}
+
+.footer span {
+    color: #D72508;
+    font-size: 1.8rem;
+}
+
+.footer-one {
+    display: flex;
+    justify-content: space-between;
+    color: #A7B3B1;
+    padding: 5% 3% 5% 3%;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    padding-left: 15%;
+    font-size: 1.4em;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #A7B3B1;
+}
+
+.footer-social {
+    width: 25%;
+    color: white;
+}
+
+.copy-wright {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.6em;
+}
+
+.footer a:hover {
+    transform: scale(1, 1.05);
+    transition-delay: 0.0001s;
+}
+
+
+/*==========================================================MEDIA QUERIES FOR SMALLLER SCREENS =============================================================*/
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    html,
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .navigation button .navbar-toggler-icon {
+        font-size: 1.05em;
+    }
+    .navbar-nav a {
+        margin-left: 45%;
+    }
+    .carousel-item img {
+        width: 20rem;
+    }
+    .cast {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px;
+        padding: 5% 2% 10% 2%;
+        align-items: center;
+    }
+    .blackwidow-cast-img {
+        display: none;
+    }
+    .avengers-cast-img {
+        display: none;
+    }
+    .aladdin-cast-img {
+        display: none;
+    }
+    .spiderman-cast-img {
+        display: none;
+    }
+    .harry-cast-img {
+        display: none;
+    }
+    .dune-cast-img {
+        display: none;
+    }
+    .rednotice-cast-img {
+        display: none;
+    }
+    .BB-cast-img {
+        display: none;
+    }
+    .multiverse-cast-img {
+        display: none;
+    }
+    .cast-text h1 {
+        font-size: 1.8em;
+        margin-top: 5%;
+    }
+    .cast-text p {
+        font-size: 1.1em;
+        text-align: justify;
+        padding: 10px;
+    }
+    .footer-one {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin-bottom: 2%;
+        line-height: 2;
+        text-align: center;
+    }
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2%;
+        padding-left: 0%;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+    html,
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .navigation button .navbar-toggler-icon {
+        font-size: 2.5em;
+    }
+    .navbar-nav a {
+        margin-left: 45%;
+    }
+    .carousel-item img {
+        width: 40rem;
+    }
+    .cast {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px;
+        padding: 5% 2% 10% 2%;
+        align-items: center;
+    }
+    .blackwidow-cast-img {
+        display: none;
+    }
+    .avengers-cast-img {
+        display: none;
+    }
+    .aladdin-cast-img {
+        display: none;
+    }
+    .spiderman-cast-img {
+        display: none;
+    }
+    .harry-cast-img {
+        display: none;
+    }
+    .dune-cast-img {
+        display: none;
+    }
+    .rednotice-cast-img {
+        display: none;
+    }
+    .BB-cast-img {
+        display: none;
+    }
+    .multiverse-cast-img {
+        display: none;
+    }
+    .cast-text {
+        padding: 20px;
+    }
+    .cast-text h1 {
+        font-size: 3.3em;
+        margin-top: 5%;
+    }
+    .cast-text p {
+        font-size: 2.3em;
+        text-align: justify;
+    }
+    .footer {
+        font-size: 2em;
+    }
+    .footer-one {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin-bottom: 2%;
+        line-height: 2;
+        text-align: center;
+    }
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2%;
+        padding-left: 0%;
+        font-size: 1.3em;
+    }
+    .footer-one span {
+        font-size: 1.1em;
+    }
+    .footer-one .navbar-brand {
+        font-size: 1.2em;
+    }
+    .navigation a {
+        font-size: 1.7em;
+    }
+    .navigation span {
+        font-size: 3.8rem;
+        color: #5525a3;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    html,
+    body {
+        width: 102%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .navigation span {
+        font-size: 3rem;
+        color: #5525a3;
+    }
+    .navigation .navbar-brand {
+        font-size: 1.8rem;
+        color: #5525a3;
+    }
+    .navbar-nav a {
+        width: 1.4em;
+        font-size: 1.7em;
+        gap: 0em;
+    }
+    .carousel-item img {
+        width: 52rem;
+    }
+    .cast {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px;
+        padding: 5% 2% 10% 2%;
+        align-items: center;
+    }
+    .blackwidow-cast-img {
+        display: none;
+    }
+    .avengers-cast-img {
+        display: none;
+    }
+    .aladdin-cast-img {
+        display: none;
+    }
+    .spiderman-cast-img {
+        display: none;
+    }
+    .harry-cast-img {
+        display: none;
+    }
+    .dune-cast-img {
+        display: none;
+    }
+    .rednotice-cast-img {
+        display: none;
+    }
+    .BB-cast-img {
+        display: none;
+    }
+    .multiverse-cast-img {
+        display: none;
+    }
+    .cast-text {
+        padding: 30px;
+    }
+    .cast-text h1 {
+        font-size: 5em;
+        margin-top: 5%;
+    }
+    .cast-text p {
+        font-size: 2.5em;
+        text-align: justify;
+    }
+    .footer {
+        font-size: 2.4em;
+    }
+    .footer-one {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin-bottom: 2%;
+        line-height: 2;
+        text-align: center;
+    }
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2%;
+        padding-left: 0%;
+        font-size: 1.3em;
+    }
+    .footer-one span {
+        font-size: 1.6em;
+    }
+    .footer-one .navbar-brand {
+        font-size: 1.6em;
+    }
+}
