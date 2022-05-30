@@ -21,7 +21,7 @@
 .navigation {
     display: flex;
     padding-top: 2%;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Russo One', sans-serif;
     align-items: center;
     padding-left: 5%;
 }
@@ -47,7 +47,7 @@
 
 .navbar-nav a {
     gap: 8em;
-    margin-left: 80%;
+    margin-left: 60%;
 }
 
 .navigation a:hover {
@@ -233,6 +233,14 @@ progress[value]::-webkit-progress-value {
 .footer a:hover {
     transform: scale(1, 1.05);
     transition-delay: 0.0001s;
+}
+#preloader{
+    background:#000 url(/movies/preloader.gif) no-repeat center;
+   background-size:15%;
+    height:100vh;
+    width:100%;
+    position:fixed;
+    z-index:100;
 }
 
 

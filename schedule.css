@@ -202,5 +202,12 @@ h4{
     transition-delay: 0.0001s;
     color:red;
 }
-
+#preloader{
+    background:#000 url(/movies/preloader.gif) no-repeat center;
+   background-size:15%;
+    height:100vh;
+    width:100%;
+    position:fixed;
+    z-index:100;
+}
 
