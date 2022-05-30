@@ -29,9 +29,7 @@ body{
 }
 
 .brand-name {
-    font-family: 'Russo One', sans-serif;
-    
-  
+    font-family: 'Russo One', sans-serif; 
 }
 
 .navigation a {
@@ -59,12 +57,51 @@ body{
 .movie-times{
   color:#A7B3B1;
 }
-.movie-times h1{
-    padding:5% 0 5% 2%;
-    color:white;
-    font-size:5.5rem;
+.marquee{
+    width:100%;
+    height:20vw;
+    background-color:#070111;
+    color:#D72508;
+    overflow:hidden;
     font-weight: bold;
+    font-family: 'Russo One', sans-serif; 
+}
+.marquee:before, .marquee:after{
+    position:absolute;
+    top:0;
+    height:50%;
+    width:10rem;
+    content:"";
+    z-index:1;
+}
+.marquee:before{
+    left:0;
+    background:linear-gradient(to right, #070111 0%, transparent 100%)
+}
+.marquee:after{
+    right:0;
+    background: linear-gradient(to left, #070111 0%, transparent 100%);
+}
+.marquee-content{
+    display:flex;
+    justify-content: space-around;
+    height:100%;
+    list-style:none;
+    animation:scrolling 25s linear infinite;
+}
 
+@keyframes scrolling{
+    0%{transform: translateX(0vw);}
+    100%{transform:translateX(-100vw);}
+}
+.marquee-content li{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:50vw;
+    font-size:6.0rem;
+    flex-shrink:0;
+    white-space:no-wrap;
 }
 .movie-times-main{
     display:grid;
@@ -90,6 +127,7 @@ h4{
     color:white;
     padding:2% 3%;
     text-decoration: none;
+    border-radius:2px;
 }
 .main-movie a:hover{
     color:white;
