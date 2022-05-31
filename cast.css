@@ -24,6 +24,7 @@
     font-family: 'Noto Sans', sans-serif;
     align-items: center;
     padding-left: 5%;
+    color: #A7B3B1;
 }
 
 .navigation span {
@@ -39,10 +40,6 @@
     color: #A7B3B1;
     font-size: 1.07em;
     font-weight: bold;
-}
-
-.navigation a:hover span {
-    color: white;
 }
 
 .navbar-nav a {
@@ -189,7 +186,7 @@ progress[value]::-webkit-progress-value {
 }
 
 .footer span {
-    color: #D72508;
+    color: #e70404;
     font-size: 1.8rem;
 }
 
