@@ -207,7 +207,7 @@ h4{
     color:red;
 }
 #preloader{
-    background:#000 url(/movies/preloader.gif) no-repeat center;
+    background:#000 url(./movies/preloader.gif) no-repeat center;
    background-size:15%;
     height:100vh;
     width:100%;
