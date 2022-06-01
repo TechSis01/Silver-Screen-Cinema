@@ -115,6 +115,7 @@ progress[value]::-webkit-progress-value {
 
 .movie {
     width: 200px;
+    border-radius: 5px;;
 }
 
 .current-movies p {

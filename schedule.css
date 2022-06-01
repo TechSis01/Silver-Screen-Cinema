@@ -112,6 +112,7 @@ body{
 }
 img{
     width:250px;
+    border-radius: 5px;
 }
 .main-movie{
     display:flex;
