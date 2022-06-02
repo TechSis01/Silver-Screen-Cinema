@@ -1,0 +1,53 @@
+/*==========================================================UNIVERSAL SELECTOR==============================================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #070111;
+}
+
+
+/*==========================================================NAVIGATION=====================================================*/
+
+.navigation button .navbar-toggler-icon {
+    font-size: 1.2em;
+}
+
+.navigation {
+    display: flex;
+    padding-top: 2%;
+    font-family: 'Russo One', sans-serif;
+    align-items: center;
+    padding-left: 5%;
+    color: #A7B3B1;
+}
+
+.navigation span {
+    font-size: 1.5rem;
+    color: #e70404;
+}
+
+.brand-name {
+    font-family: 'Russo One', sans-serif;
+}
+
+.navigation a {
+    color: #A7B3B1;
+    font-size: 1.07em;
+}
+
+.navbar-nav a {
+    gap: 8em;
+    margin-left: 80%;
+}
+
+.navigation a:hover {
+    transform: scale(1, 1.05);
+    transition-delay: 0.0001s;
+    color: #e70404;
+}
