@@ -233,8 +233,8 @@ progress[value]::-webkit-progress-value {
 }
 
 #preloader{
-    background:#000 url(./movies/preloader.gif) no-repeat center;
-   background-size:15%;
+    background:#070111 url(./movies/loaderloader.gif) no-repeat center;
+   background-size:50%;
     height:100vh;
     width:100%;
     position:fixed;

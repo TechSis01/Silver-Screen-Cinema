@@ -12,7 +12,7 @@ body{
     font-family: 'Noto Sans', sans-serif;
 }
 /*=====================================NAVIGATION====================================*/
-.navigation button .navbar-toggler-icon {
+/*.navigation button .navbar-toggler-icon {
     font-size: 1.2em;
 }
 
@@ -52,7 +52,49 @@ body{
     transform: scale(1, 1.05);
     transition-delay: 0.0001s;
     color: #e70404;
+}*/
+.navigation button .navbar-toggler-icon {
+    font-size: 1.2em;
 }
+
+.navigation {
+    display: flex;
+    padding-top: 2%;
+    font-family: 'Russo One', sans-serif;
+    align-items: center;
+    padding-left: 5%;
+}
+
+.navigation span {
+    font-size: 2.5rem;
+    color: #e70404;
+}
+
+.brand-name {
+    font-family: 'Russo One', sans-serif;
+}
+
+.navigation a {
+    color: #A7B3B1;
+    font-size: 1.07em;
+    font-weight: bold;
+}
+
+.navigation a:hover span {
+    color: white;
+}
+
+.navbar-nav a {
+    gap: 8em;
+    margin-left: 60%;
+}
+
+.navigation a:hover {
+    transform: scale(1, 1.05);
+    transition-delay: 0.0001s;
+    color: #e70404;
+}
+
 
 /*==========================================MOVIE TIMES=================================================*/
 .movie-times{
@@ -60,7 +102,7 @@ body{
 }
 .marquee{
     width:100%;
-    height:20vw;
+    height:10vw;
     margin-top: 5%;
     background-color:#070111;
     color:#D72508;
@@ -109,6 +151,7 @@ body{
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 20px;
+    padding-top:10%;
 }
 img{
     width:250px;
@@ -151,7 +194,11 @@ h4{
 .fa-star-half-stroke{
     color:red;
 }
-
+.main-movie-2{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 20px;
+}
 /*========================================FOOTER==========================================*/
 
 .footer {
@@ -206,14 +253,7 @@ h4{
     transition-delay: 0.0001s;
     color:red;
 }
-#preloader{
-    background:#000 url(./movies/preloader.gif) no-repeat center;
-   background-size:15%;
-    height:100vh;
-    width:100%;
-    position:fixed;
-    z-index:100;
-}
+
 
 /*=================================MEDIA QUERIES---------------------------------------------*/
 @media (max-width:280px){
