@@ -50,7 +50,7 @@ form.addEventListener('submit', function(e){
     const nameInput= document.querySelector('#firstName')
     let userName = nameInput.value
     const feedback = document.createElement('p')
-    feedback.innerText = `Dear ${userName} your ticket details will be sent immediately to your email address,check back in 5 miniutes`
+    feedback.innerText = `Dear ${userName} your ticket details will be sent immediately to your email address,check back in 5 miniutes.`
     paymentBtn.insertAdjacentElement('afterend',feedback) 
     feedback.style.fontSize = '1.4rem'
 },{once:true})
