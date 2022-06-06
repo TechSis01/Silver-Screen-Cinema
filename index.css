@@ -8,6 +8,7 @@ body {
     font-size: 1.6rem;
     background-color: #070111;
     font-family: 'Noto Sans', sans-serif;
+    position:relative;
 }
 
 
@@ -53,13 +54,12 @@ span {
 .link:hover {
     cursor: pointer;
     color: #e70404;
-    ;
 }
-
 video {
     width: 100%;
     margin-bottom: 0;
     z-index: -1;
+    position:relative;
 }
 
 .fa-brands:hover {
@@ -73,7 +73,31 @@ video {
 
 
 /*==========================================================PAUSE AND PLAY BUTTON========================================================*/
-
+.fa-play{
+   width:10px;
+}
+.play-btn{
+    position:absolute;
+    z-index:5;
+    top:400px;
+    left:100px;
+    border-radius:50%;
+    padding:1.5%;
+    border:none;
+    background-color: #D72508;
+    color:white;
+}
+.pause-btn{
+    position:absolute;
+    z-index:5;
+    top:400px;
+    left:170px;
+    border-radius:50%;
+    padding:1.5%;
+    border:none;
+    background-color: #D72508;
+    color:white;
+}
 
 /*==========================================================CAST PROGRESS BAR========================================================*/
 
@@ -308,6 +332,16 @@ progress[value]::-webkit-progress-value {
     .footer-social a {
         font-size: 1.1rem;
     }
+    .play-btn{
+        top:80px;
+        left:50px;
+        padding:2%;
+    }
+    .pause-btn{
+        top:80px;
+        left:80px;
+        padding:2%;
+    }
 }
 
 
@@ -373,6 +407,17 @@ progress[value]::-webkit-progress-value {
     .copy-wright {
         font-size: 1.4rem;
     }
+     .play-btn{
+         top:100px;
+         left:50px;
+         padding:2%;
+     }
+     .pause-btn{
+         top:100px;
+         left:80px;
+         padding:2%;
+     }
+    
 }
 
 
@@ -438,6 +483,18 @@ progress[value]::-webkit-progress-value {
     .copy-wright {
         font-size: 1.6rem;
     }
+    .fa-play{
+        width:10px;
+     }
+     .play-btn{
+         top:180px;
+         left:100px;
+     }
+     .pause-btn{
+         top:180px;
+         left:150px;
+     }
+     
 }
 
 
@@ -503,4 +560,16 @@ progress[value]::-webkit-progress-value {
     .copy-wright {
         font-size: 1.6rem;
     }
+    .fa-play{
+        width:10px;
+     }
+     .play-btn{
+         top:250px;
+         left:100px;
+     }
+     .pause-btn{
+         top:250px;
+         left:150px;
+     }
+     
 }
