@@ -1,0 +1,586 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+    background-color: #070111;
+}
+
+/*=====================================NAVIGATION====================================*/
+.navigation button .navbar-toggler-icon {
+    font-size: 1.2em;
+}
+
+.navigation {
+    display: flex;
+    padding-top: 2%;
+    font-family: 'Russo One', sans-serif;
+    align-items: center;
+    padding-left: 5%;
+}
+
+.navigation span {
+    font-size: 2.5rem;
+    color: #e70404;
+}
+
+.brand-name {
+    font-family: 'Russo One', sans-serif; 
+}
+
+.navigation a {
+    color: #A7B3B1;
+    font-size: 1.07em;
+    font-weight: bold;
+}
+
+.navigation a:hover span {
+    color: white;
+}
+
+.navbar-nav a {
+    gap: 8em;
+    margin-left: 60%;
+}
+
+.navigation a:hover {
+    transform: scale(1, 1.05);
+    transition-delay: 0.0001s;
+    color: #e70404;
+}
+
+/*========================ANIMATION=========================================*/
+
+.marquee{
+    width:100%;
+    height:20vw;
+    margin-top: 5%;
+    background-color:#070111;
+    color:#D72508;
+    overflow:hidden;
+    font-weight: bold;
+    font-family: 'Russo One', sans-serif; 
+}
+.marquee:before, .marquee:after{
+    position:absolute;
+    top:60px;
+    height:50%;
+    width:10rem;
+    content:"";
+    z-index:1;
+}
+.marquee:before{
+    left:0;
+    background:linear-gradient(to right, #070111 0%, transparent 100%)
+}
+.marquee:after{
+    right:0;
+    background: linear-gradient(to left, #070111 0%, transparent 100%);
+}
+.marquee-content{
+    display:flex;
+    justify-content: space-around;
+    height:100%;
+    list-style:none;
+    animation:scrolling 25s linear infinite;
+}
+
+@keyframes scrolling{
+    0%{transform: translateX(0vw);}
+    100%{transform:translateX(-100vw);}
+}
+.marquee-content li{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:50vw;
+    font-size:6.0rem;
+    flex-shrink:0;
+    white-space:no-wrap;
+}
+/*==================================BOOK A TICKET=============================================*/
+.bookings{
+    background-color:#14052c;
+    width:70%;
+    margin:0 auto;
+    padding:4% 4%;
+    border-radius:20px;
+    color:white;
+    font-size:2.0rem;
+}
+.bookings h1{
+    font-size:4.5rem;
+}
+#qty{
+    border:none;
+    background-color: #5f379f;
+    color:#A7B3B1;
+}
+#qty:focus{
+    outline:none;
+}
+em{
+    font-size:1.4rem;
+}
+
+/*=======================DIFFERENT MOVIE TIMES==================================*/
+.choose-time{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 10px;
+    font-size:1.5rem;
+}
+.choose-time button{
+    padding:2% 3%;
+    background-color: #a0001c;
+    color:white;
+    border:none;
+    outline:none;
+    margin-right:2%;
+    border-radius:5px;
+    font-size:1.5rem;
+}
+#book-ticket-btn{
+    padding:2% 3%;
+    background-color: #a0001c;
+    color:white;
+    border:none;
+    outline:none;
+    margin-top:5%;
+    border-radius:5px;
+}
+.change{
+    background-color: green;
+}
+/*================================MODAL=======================================*/
+.modal-container{
+    display:none;
+    position:fixed;
+    width:100%;
+    height:230%;
+    background-color: rgba(222, 206, 206, 0.3);
+    z-index:1;
+    top:0;
+    bottom:0;
+    left:0;
+    overflow:auto;
+    animation-name: modal;
+    animation-duration:1.5s;
+}
+@keyframes modal{
+    from{opacity:0}
+    to{opacity:2}
+}
+form{
+   /* display:flex;
+    flex-direction: column;
+    align-items: center;*/
+    position:relative;
+   
+}
+.input-data{
+    /*display:flex;
+    flex-direction: column;*/
+    width:80%;
+}
+.input-data input{
+    width:100%;
+    padding:1% 5%;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-width:1px;
+}
+.input-data input:focus{
+    outline:none;
+}
+.modal-content{
+    width:60%;
+    margin:5% auto;
+    padding:2% 4%;
+    box-shadow:0 10px 10px 9px rgb(38, 36, 36);
+}
+.x{
+    margin-left:90%;
+    border-radius:100%;
+    border:1px solid red;
+    width:5%;
+    text-align:center;
+    color:white;
+    background-color: #D72508;
+    outline:none;
+}
+.x:hover{
+    cursor:pointer;
+    color:black;
+}
+#pay{
+    padding:2% 3%;
+    background-color: #a0001c;
+    color:white;
+    border:none;
+    outline:none;
+    margin-top:5%;
+    border-radius:5px;
+}
+#nameError{
+    color:red;
+    position:absolute;
+    right:150px;
+    font-size:1.3rem;
+    top:30px;
+}
+#emailError{
+    color:red;
+    position:absolute;
+    right:150px;
+    font-size:1.3rem;
+    top:90px;
+}
+
+.input-data span i{
+    color:green;
+}
+
+
+/*========================================FOOTER==========================================*/
+
+.footer {
+    font-family: 'Russo One', sans-serif;
+    margin-top: 5%;
+}
+
+.footer span {
+    color: #D72508;
+    font-size: 1.8rem;
+}
+
+.footer-one {
+    display: flex;
+    justify-content: space-between;
+    color: #A7B3B1;
+    padding: 5% 3% 5% 3%;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    padding-left: 15%;
+    font-size: 1.4em;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #A7B3B1;
+}
+
+.footer-social {
+    width: 25%;
+    color: white;
+}
+
+.copy-wright {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.6em;
+}
+
+.footer a:hover {
+    transform: scale(1, 1.05);
+    transition-delay: 0.0001s;
+    color:red;
+}
+
+/*==============================MEDIA QUERIES=============================================================8/*/
+/*==================================SAMSUNG FOLD===================================*/
+@media (max-width:280px){
+    .marquee-content li{
+        font-size:1rem;
+    }
+    .marquee:before, .marquee:after{
+        top:200px;
+        position:relative;
+    }
+    em{
+        font-size:0.9rem;
+    }
+    .bookings h1{
+        font-size:1.5rem;
+    }
+    .bookings{
+        font-size:1.4rem;
+        width:100%;
+    }
+    .choose-time button{
+        font-size:1.2rem;
+        padding:0.5em;
+    }
+    #qty{
+        width:40%;
+    }
+    .modal-content{
+        width:80%;
+        margin:70% auto;
+        padding:2% 7%;
+    }
+    .x{
+        width:14%;
+    }
+    .input-data{
+        font-size:1.3rem;
+    }
+    #nameError{
+        right:30px;
+        top:20px;
+        font-size:1.1rem;
+    }
+    #emailError{
+        right:30px;
+        top:60px;
+        font-size:1.1rem;
+    }
+    #pay{
+        font-size:1.3rem;
+    }
+    .footer-one {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin-bottom: 2%;
+        line-height: 1.5;
+        text-align: center;
+        font-size:1.1rem;
+    }
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2%;
+        padding-left: 0%;
+        font-size:1.1rem;
+
+    }
+    .copy-wright{
+        font-size:1.1rem;
+    }
+    .footer-social a{
+        font-size:1.1rem;
+    }
+}
+
+/*====================PHONE SIZES===============================*/
+@media only screen and (max-width: 480px) and (min-width: 320px){
+    .marquee-content li{
+        font-size:1.8rem;
+    }
+    .marquee:before, .marquee:after{
+        top:200px;
+        position:relative;
+    }
+    .bookings h1{
+        font-size:2.2rem;
+    }
+    .bookings  {
+        font-size:1.5rem;
+    }
+    .choose-time button{
+        font-size:1.2rem;
+        padding:0.5em;
+    }
+    .modal-content{
+        width:80%;
+        margin:30% auto;
+        padding:2% 7%;
+    }
+    .x{
+        margin-top:2%;
+        font-size:1.3rem;
+        width:10%;
+    }
+    .input-data{
+        font-size:1.3rem;
+    }
+    #nameError{
+        right:40px;
+        top:20px;
+        font-size:1.1rem;
+    }
+    #emailError{
+        right:40px;
+        top:60px;
+        font-size:1.1rem;
+    }
+    #pay{
+        font-size:1.3rem;
+    }
+    .footer {
+        font-family: 'Russo One', sans-serif;
+        margin-top: 5%;
+    }
+    .footer-one {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin-bottom: 2%;
+        line-height: 1.5;
+        text-align: center;
+        font-size:1.4rem;
+    }
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2%;
+        padding-left: 0%;
+        font-size:1.4rem;
+    
+    }
+    .copy-wright{
+        font-size:1.4rem;
+    }
+        
+}
+/*================================DESKTOP SIZES======================================*/
+@media only screen and (max-width: 768px) and (min-width: 481px){
+    .marquee-content li{
+        font-size:1.8rem;
+    }
+    .marquee:before, .marquee:after{
+        top:200px;
+        position:relative;
+    }
+    .bookings h1{
+        font-size:2.2rem;
+    }
+    .bookings  {
+        font-size:1.5rem;
+    }
+    .choose-time button{
+        font-size:1.2rem;
+        padding:0.5em;
+    }
+    .modal-content{
+        width:80%;
+        margin:40% auto;
+        padding:2% 7%;
+    }
+    .x{
+        width:5%;
+    }
+    .input-data{
+        font-size:1.3rem;
+    }
+    #nameError{
+        right:120px;
+        top:20px;
+        font-size:1.1rem;
+    }
+    #emailError{
+        right:120px;
+        top:70px;
+        font-size:1.1rem;
+    }
+    #pay{
+        font-size:1.3rem;
+    }
+    .footer {
+        font-family: 'Russo One', sans-serif;
+        margin-top: 5%;
+    }
+    .footer-one {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin-bottom: 2%;
+        line-height: 1.5;
+        text-align: center;
+        font-size:1.4rem;
+    }
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2%;
+        padding-left: 0%;
+        font-size:1.4rem;
+    
+    }
+    .copy-wright{
+        font-size:1.4rem;
+    }
+}
+/*==========================LARGER SCREENS===============================*/
+@media only screen and (max-width: 1024px) and (min-width: 769px){
+    .marquee-content li{
+        font-size:1.8rem;
+    }
+    .marquee:before, .marquee:after{
+        top:200px;
+        position:relative;
+    }
+    .bookings h1{
+        font-size:2.2rem;
+    }
+    .bookings  {
+        font-size:1.5rem;
+    }
+    .choose-time button{
+        font-size:1.2rem;
+        padding:0.5em;
+    }
+    .modal-content{
+        width:80%;
+        margin:40% auto;
+        padding:2% 7%;
+    }
+    .x{
+        width:5%;
+    }
+    .input-data{
+        font-size:1.7rem;
+    }
+    #nameError{
+        right:120px;
+        top:20px;
+        font-size:1.1rem;
+    }
+    #emailError{
+        right:120px;
+        top:70px;
+        font-size:1.1rem;
+    }
+    #pay{
+        font-size:1.3rem;
+    }
+    .footer {
+        font-family: 'Russo One', sans-serif;
+        margin-top: 5%;
+    }
+    .footer-one {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin-bottom: 2%;
+        line-height: 1.5;
+        text-align: center;
+        font-size:1.4rem;
+    }
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2%;
+        padding-left: 0%;
+        font-size:1.4rem;
+    
+    }
+    .copy-wright{
+        font-size:1.4rem;
+    }
+}

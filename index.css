@@ -28,7 +28,6 @@ nav {
 
 .link {
     font-size: 1.15em;
-    font-weight: bold;
 }
 
 .brand-name {
@@ -63,7 +62,6 @@ video {
     z-index: -1;
 }
 
-
 .fa-brands:hover {
     color: #D72508;
 }
@@ -72,6 +70,9 @@ video {
     margin-right: 10%;
     color: white;
 }
+
+
+/*==========================================================PAUSE AND PLAY BUTTON========================================================*/
 
 
 /*==========================================================CAST PROGRESS BAR========================================================*/
@@ -108,14 +109,15 @@ progress[value]::-webkit-progress-value {
 .current-movies-grid {
     /*display: flex;
     justify-content: space-around;*/
-    display:grid;
-    grid-template-columns: repeat(5,1fr);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     margin-top: 3%;
 }
 
 .movie {
     width: 200px;
-    border-radius: 5px;;
+    border-radius: 5px;
+    ;
 }
 
 .current-movies p {
@@ -239,49 +241,50 @@ progress[value]::-webkit-progress-value {
     width:100%;
     position:fixed;
     z-index:100;
+
 }
-@media (max-width:280px){
-    .brand-name{
-        font-size:1.2rem;
+
+@media (max-width:280px) {
+    .brand-name {
+        font-size: 1.2rem;
     }
-    span{
-        font-size:0.9rem;
+    span {
+        font-size: 0.9rem;
     }
-    .link{
-        font-size:0.7rem;
+    .link {
+        font-size: 0.7rem;
     }
-    .current-movies h3{
-        font-size:2.0rem;
+    .current-movies h3 {
+        font-size: 2.0rem;
     }
-    .current-movies-grid{
-        padding:0%  0% 5%;
-        grid-template-columns: repeat(1,1fr);
+    .current-movies-grid {
+        padding: 0% 0% 5%;
+        grid-template-columns: repeat(1, 1fr);
         grid-column-gap: 5px;
         text-align: center;
     }
-    .current-movies p{
-        font-size:1.1rem;
+    .current-movies p {
+        font-size: 1.1rem;
     }
-    .movie{
-        width:200px;
+    .movie {
+        width: 200px;
     }
-    .movies-coming-soon h3{
-        font-size:2.0rem;
+    .movies-coming-soon h3 {
+        font-size: 2.0rem;
     }
-    .movies-coming-soon p{
-        font-size:1.1rem;
-        line-height:1;
+    .movies-coming-soon p {
+        font-size: 1.1rem;
+        line-height: 1;
     }
-    .news-box{
+    .news-box {
         flex-wrap: wrap;
-        padding:0 5%;
-        
+        padding: 0 5%;
     }
-    .news-info{
-        width:250px;
+    .news-info {
+        width: 250px;
     }
-    .zendaya{
-       padding-left:5%;
+    .zendaya {
+        padding-left: 5%;
     }
     .footer-one {
         display: flex;
@@ -290,67 +293,66 @@ progress[value]::-webkit-progress-value {
         margin-bottom: 2%;
         line-height: 1.5;
         text-align: center;
-        font-size:1.1rem;
+        font-size: 1.1rem;
     }
     .footer-links {
         display: flex;
         flex-direction: column;
         margin-bottom: 2%;
         padding-left: 0%;
-        font-size:1.1rem;
-
+        font-size: 1.1rem;
     }
-    .copy-wright{
-        font-size:1.1rem;
+    .copy-wright {
+        font-size: 1.1rem;
     }
-    .footer-social a{
-        font-size:1.1rem;
+    .footer-social a {
+        font-size: 1.1rem;
     }
 }
 
 
 /*=====================================MEDIA QUERIES(SMALL SCREENS)==================================================>*/
-@media only screen and (max-width: 480px) and (min-width: 320px){
-    .brand-name{
-        font-size:1.2rem;
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    .brand-name {
+        font-size: 1.2rem;
     }
-    span{
-        font-size:0.9rem;
+    span {
+        font-size: 0.9rem;
     }
-    .link{
-        font-size:1.1rem;
+    .link {
+        font-size: 1.1rem;
     }
-    .current-movies h3{
-        font-size:2.0rem;
+    .current-movies h3 {
+        font-size: 2.0rem;
     }
-    .current-movies-grid{
-        padding:0%  0% 5%;
-        grid-template-columns: repeat(2,1fr);
+    .current-movies-grid {
+        padding: 0% 0% 5%;
+        grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 5px;
         text-align: center;
     }
-    .current-movies p{
-        font-size:1.1rem;
+    .current-movies p {
+        font-size: 1.1rem;
     }
-    .movie{
-        width:150px;
+    .movie {
+        width: 150px;
     }
-    .movies-coming-soon h3{
-        font-size:2.0rem;
+    .movies-coming-soon h3 {
+        font-size: 2.0rem;
     }
-    .movies-coming-soon p{
-        font-size:1.1rem;
-        line-height:1;
+    .movies-coming-soon p {
+        font-size: 1.1rem;
+        line-height: 1;
     }
-    .news-box{
+    .news-box {
         flex-wrap: wrap;
-        
     }
-    .news-info{
-        width:280px;
+    .news-info {
+        width: 280px;
     }
-    .zendaya{
-       padding-left:5%;
+    .zendaya {
+        padding-left: 5%;
     }
     .footer-one {
         display: flex;
@@ -359,63 +361,63 @@ progress[value]::-webkit-progress-value {
         margin-bottom: 2%;
         line-height: 1.5;
         text-align: center;
-        font-size:1.4rem;
+        font-size: 1.4rem;
     }
     .footer-links {
         display: flex;
         flex-direction: column;
         margin-bottom: 2%;
         padding-left: 0%;
-        font-size:1.4rem;
-
+        font-size: 1.4rem;
     }
-    .copy-wright{
-        font-size:1.4rem;
+    .copy-wright {
+        font-size: 1.4rem;
     }
 }
+
 
 /*=========================DESKTOP SIZES========================================*/
-@media only screen and (max-width: 768px) and (min-width: 481px){
-    .brand-name{
-        font-size:1.6rem;
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+    .brand-name {
+        font-size: 1.6rem;
     }
-    span{
-        font-size:0.9rem;
+    span {
+        font-size: 0.9rem;
     }
-    .link{
-        font-size:1.3rem;
+    .link {
+        font-size: 1.3rem;
     }
-    .current-movies h3{
-        font-size:2.0rem;
+    .current-movies h3 {
+        font-size: 2.0rem;
     }
-    .current-movies-grid{
-        padding:0%  0% 5%;
-        grid-template-columns: repeat(3,1fr);
+    .current-movies-grid {
+        padding: 0% 0% 5%;
+        grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 5px;
         text-align: center;
     }
-    .current-movies p{
-        font-size:1.2rem;
+    .current-movies p {
+        font-size: 1.2rem;
     }
-    .movie{
-        width:150px;
+    .movie {
+        width: 150px;
     }
-    .movies-coming-soon h3{
-        font-size:2.0rem;
+    .movies-coming-soon h3 {
+        font-size: 2.0rem;
     }
-    .movies-coming-soon p{
-        font-size:1.4rem;
-        line-height:1;
+    .movies-coming-soon p {
+        font-size: 1.4rem;
+        line-height: 1;
     }
-    .news-box{
+    .news-box {
         flex-wrap: wrap;
-        
     }
-    .news-info{
-        width:280px;
+    .news-info {
+        width: 280px;
     }
-    .zendaya{
-       padding-left:5%;
+    .zendaya {
+        padding-left: 5%;
     }
     .footer-one {
         display: flex;
@@ -424,62 +426,63 @@ progress[value]::-webkit-progress-value {
         margin-bottom: 2%;
         line-height: 1.5;
         text-align: center;
-        font-size:1.6rem;
+        font-size: 1.6rem;
     }
     .footer-links {
         display: flex;
         flex-direction: column;
         margin-bottom: 2%;
         padding-left: 0%;
-        font-size:1.6rem;
-
+        font-size: 1.6rem;
     }
-    .copy-wright{
-        font-size:1.6rem;
+    .copy-wright {
+        font-size: 1.6rem;
     }
 }
+
+
 /*==========================================LARGER SCREEN SIZES================================*/
-@media only screen and (max-width: 1024px) and (min-width: 769px){
-    .brand-name{
-        font-size:1.6rem;
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    .brand-name {
+        font-size: 1.6rem;
     }
-    span{
-        font-size:0.9rem;
+    span {
+        font-size: 0.9rem;
     }
-    .link{
-        font-size:1.3rem;
+    .link {
+        font-size: 1.3rem;
     }
-    .current-movies h3{
-        font-size:2.0rem;
+    .current-movies h3 {
+        font-size: 2.0rem;
     }
-    .current-movies-grid{
-        padding:0%  0% 5%;
-        grid-template-columns: repeat(4,1fr);
+    .current-movies-grid {
+        padding: 0% 0% 5%;
+        grid-template-columns: repeat(4, 1fr);
         grid-column-gap: 5px;
         text-align: center;
     }
-    .current-movies p{
-        font-size:1.2rem;
+    .current-movies p {
+        font-size: 1.2rem;
     }
-    .movie{
-        width:150px;
+    .movie {
+        width: 150px;
     }
-    .movies-coming-soon h3{
-        font-size:2.0rem;
+    .movies-coming-soon h3 {
+        font-size: 2.0rem;
     }
-    .movies-coming-soon p{
-        font-size:1.2rem;
-        line-height:1;
+    .movies-coming-soon p {
+        font-size: 1.2rem;
+        line-height: 1;
     }
-    .news-box{
+    .news-box {
         flex-wrap: wrap;
-        
     }
-    .news-info{
-        width:280px;
+    .news-info {
+        width: 280px;
     }
-    .zendaya{
-       padding-left:5%;
+    .zendaya {
+        padding-left: 5%;
     }
     .footer-one {
         display: flex;
@@ -488,17 +491,16 @@ progress[value]::-webkit-progress-value {
         margin-bottom: 2%;
         line-height: 1.5;
         text-align: center;
-        font-size:1.6rem;
+        font-size: 1.6rem;
     }
     .footer-links {
         display: flex;
         flex-direction: column;
         margin-bottom: 2%;
         padding-left: 0%;
-        font-size:1.6rem;
-
+        font-size: 1.6rem;
     }
-    .copy-wright{
-        font-size:1.6rem;
+    .copy-wright {
+        font-size: 1.6rem;
     }
 }

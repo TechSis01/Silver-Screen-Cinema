@@ -24,6 +24,7 @@
     font-family: 'Russo One', sans-serif;
     align-items: center;
     padding-left: 5%;
+    color: #A7B3B1;
 }
 
 .navigation span {
@@ -38,16 +39,11 @@
 .navigation a {
     color: #A7B3B1;
     font-size: 1.07em;
-    font-weight: bold;
-}
-
-.navigation a:hover span {
-    color: white;
 }
 
 .navbar-nav a {
     gap: 8em;
-    margin-left: 60%;
+    margin-left: 80%;
 }
 
 .navigation a:hover {
@@ -189,7 +185,7 @@ progress[value]::-webkit-progress-value {
 }
 
 .footer span {
-    color: #D72508;
+    color: #e70404;
     font-size: 1.8rem;
 }
 
@@ -234,7 +230,6 @@ progress[value]::-webkit-progress-value {
     transform: scale(1, 1.05);
     transition-delay: 0.0001s;
 }
-
 
 
 /*==========================================================MEDIA QUERIES FOR SMALLLER SCREENS =============================================================*/

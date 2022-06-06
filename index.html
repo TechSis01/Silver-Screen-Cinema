@@ -21,95 +21,96 @@
             <a href="#" class="link">Home</a>
             <div><a href="./schedule.html" class="link">Schedule</a></div>
             <div><a href="cast.html" class="link">Cast</a></div>
-            <a class="link">About</a>
+            <a class="link" href="about.html">About</a>
             </div>
         </nav>
 
-        <video src="./trailer2.mp4" muted autoplay="autoplay" loop></video>
-
-        
+        <video src="./trailer2.mp4" id="myVideo" autoplay="autoplay" loop></video>
     </header>
+    <button onclick="playVid()">Play</button>
+    <button onclick="pauseVid()">Pause</button>
+
     <main>
         <!---------------------CURRENT MOVIES SECTION---------------------------------------->
         <section class="current-movies">
             <h3>OPENING THIS WEEK</h3>
             <progress value="90" max="100"></progress>
-                <div class="current-movies-grid">
+            <div class="current-movies-grid">
+                <div>
+                    <img src="./movies/dr.strange.jpg" alt="dr.strange" class="movie">
                     <div>
-                        <img src="./movies/dr.strange.jpg" alt="dr.strange" class="movie">
-                        <div>
-                            <p>Dr.Strange</p>
-                            <p>126 mins || action,Fantasy</p>
-                        </div>
+                        <p>Dr.Strange</p>
+                        <p>126 mins || action,Fantasy</p>
                     </div>
+                </div>
+                <div>
+                    <img src="./movies/juneee.JPG" alt="dune" class="movie">
                     <div>
-                        <img src="./movies/juneee.JPG" alt="dune" class="movie">
-                        <div>
-                            <p>June</p>
-                            <p>2h 35m || Sci-fi/Adventure </p>
-                        </div>
+                        <p>June</p>
+                        <p>2h 35m || Sci-fi/Adventure </p>
                     </div>
+                </div>
+                <div>
+                    <img src="./movies/sangichi.JPG" alt="black-widow" class="movie">
                     <div>
-                        <img src="./movies/sangichi.JPG" alt="black-widow" class="movie">
-                        <div>
-                            <p>SangChi</p>
-                            <p>134 mins || Fantasy,Thriller</p>
-                        </div>
+                        <p>SangChi</p>
+                        <p>134 mins || Fantasy,Thriller</p>
                     </div>
+                </div>
+                <div>
+                    <img src="./movies/avengers.jpeg" alt="avengers" class="movie">
                     <div>
-                        <img src="./movies/avengers.jpeg" alt="avengers" class="movie">
-                        <div>
-                            <p>Avengers</p>
-                            <p>181 mins|| Action</p>
-                        </div>
+                        <p>Avengers</p>
+                        <p>181 mins|| Action</p>
                     </div>
+                </div>
+                <div>
+                    <img src="./movies/alladin.jpeg" alt="alladin" class="movie">
                     <div>
-                        <img src="./movies/alladin.jpeg" alt="alladin" class="movie">
-                        <div>
-                            <p>Alladin</p>
-                            <p>128mins || Comedy, Adventure</p>
-                        </div>
+                        <p>Alladin</p>
+                        <p>128mins || Comedy, Adventure</p>
                     </div>
-                
+                </div>
+
 
                 <!--<div class="current-movies-grid">-->
+                <div>
+                    <img src="./movies/rednotice (2).jpeg" alt="red notice" class="movie">
                     <div>
-                        <img src="./movies/rednotice (2).jpeg" alt="red notice" class="movie">
-                        <div>
-                            <p>Red Notice</p>
-                            <p>118 mins || Comedy, Thriller</p>
-                        </div>
+                        <p>Red Notice</p>
+                        <p>118 mins || Comedy, Thriller</p>
                     </div>
+                </div>
+                <div>
+                    <img src="./movies/beauty-and-beast.jpeg" alt="beauty and the beast" class="movie">
                     <div>
-                        <img src="./movies/beauty-and-beast.jpeg" alt="beauty and the beast" class="movie">
-                        <div>
-                            <p>Beauty and the Beast</p>
-                            <p>129mins || Romance,Musical </p>
-                        </div>
+                        <p>Beauty and the Beast</p>
+                        <p>129mins || Romance,Musical </p>
                     </div>
+                </div>
+                <div>
+                    <img src="./movies/High-Strung.jpeg" alt="high Strung" class="movie">
                     <div>
-                        <img src="./movies/High-Strung.jpeg" alt="high Strung" class="movie">
-                        <div>
-                            <p>High Strung</p>
-                            <p>97 mins || Dance,Romance</p>
-                        </div>
+                        <p>High Strung</p>
+                        <p>97 mins || Dance,Romance</p>
                     </div>
+                </div>
+                <div>
+                    <img src="./movies/aquaman (2).jpeg" alt="aquaman" class="movie">
                     <div>
-                        <img src="./movies/aquaman (2).jpeg" alt="aquaman" class="movie">
-                        <div>
-                            <p>Aquaman</p>
-                            <p>143 mins|| Action,SuperHero</p>
-                        </div>
+                        <p>Aquaman</p>
+                        <p>143 mins|| Action,SuperHero</p>
                     </div>
+                </div>
+                <div>
+                    <img src="./movies/spider-man.jpeg" alt="Spiderman" class="movie">
                     <div>
-                        <img src="./movies/spider-man.jpeg" alt="Spiderman" class="movie">
-                        <div>
-                            <p>Spiderman: No way Home</p>
-                            <p>128mins || Action, Adventure</p>
-                        </div>
+                        <p>Spiderman: No way Home</p>
+                        <p>128mins || Action, Adventure</p>
                     </div>
-              </div>
-                <p id="more"><a href="/schedule.html">More...</a></p>
+                </div>
+            </div>
+            <p id="more"><a href="/schedule.html">More...</a></p>
         </section>
         <!-----------------------------------COMING SOON SECTION-------------------------->
         <section class="movies-coming-soon">
@@ -199,13 +200,13 @@
 
                 <div class="footer-social">
                     <a href="https://www.linkedin.com/in/queendoline-akpan/">
-                        <i class="fa-brands fa-linkedin"></i> <a
-                            href="https://www.twitter.com/forJessica_sake"><i class=" fa-brands fa-twitter "></i>
+                        <i class="fa-brands fa-linkedin"></i> <a href="https://www.twitter.com/forJessica_sake"><i
+                                class=" fa-brands fa-twitter "></i>
                         </a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <div>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <div>
             </section>
-            
+
             <div class="copy-wright">
                 <p>Silverscreen@gmail.com</p>
                 <p><span></span>Siverscreen all rights reserved.</p>
