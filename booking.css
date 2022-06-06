@@ -109,12 +109,10 @@ body {
     padding:4% 4%;
     border-radius:20px;
     color:white;
+    font-size:2.0rem;
 }
 .bookings h1{
     font-size:4.5rem;
-}
-.bookings  {
-    font-size:2.0rem;
 }
 #qty{
     border:none;
@@ -214,7 +212,6 @@ form{
     color:white;
     background-color: #D72508;
     outline:none;
-    
 }
 .x:hover{
     cursor:pointer;
@@ -302,4 +299,288 @@ form{
     transform: scale(1, 1.05);
     transition-delay: 0.0001s;
     color:red;
+}
+
+/*==============================MEDIA QUERIES=============================================================8/*/
+/*==================================SAMSUNG FOLD===================================*/
+@media (max-width:280px){
+    .marquee-content li{
+        font-size:1rem;
+    }
+    .marquee:before, .marquee:after{
+        top:200px;
+        position:relative;
+    }
+    em{
+        font-size:0.9rem;
+    }
+    .bookings h1{
+        font-size:1.5rem;
+    }
+    .bookings{
+        font-size:1.4rem;
+        width:100%;
+    }
+    .choose-time button{
+        font-size:1.2rem;
+        padding:0.5em;
+    }
+    #qty{
+        width:40%;
+    }
+    .modal-content{
+        width:80%;
+        margin:70% auto;
+        padding:2% 7%;
+    }
+    .x{
+        width:14%;
+    }
+    .input-data{
+        font-size:1.3rem;
+    }
+    #nameError{
+        right:30px;
+        top:20px;
+        font-size:1.1rem;
+    }
+    #emailError{
+        right:30px;
+        top:60px;
+        font-size:1.1rem;
+    }
+    #pay{
+        font-size:1.3rem;
+    }
+    .footer-one {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin-bottom: 2%;
+        line-height: 1.5;
+        text-align: center;
+        font-size:1.1rem;
+    }
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2%;
+        padding-left: 0%;
+        font-size:1.1rem;
+
+    }
+    .copy-wright{
+        font-size:1.1rem;
+    }
+    .footer-social a{
+        font-size:1.1rem;
+    }
+}
+
+/*====================PHONE SIZES===============================*/
+@media only screen and (max-width: 480px) and (min-width: 320px){
+    .marquee-content li{
+        font-size:1.8rem;
+    }
+    .marquee:before, .marquee:after{
+        top:200px;
+        position:relative;
+    }
+    .bookings h1{
+        font-size:2.2rem;
+    }
+    .bookings  {
+        font-size:1.5rem;
+    }
+    .choose-time button{
+        font-size:1.2rem;
+        padding:0.5em;
+    }
+    .modal-content{
+        width:80%;
+        margin:30% auto;
+        padding:2% 7%;
+    }
+    .x{
+        margin-top:2%;
+        font-size:1.3rem;
+        width:10%;
+    }
+    .input-data{
+        font-size:1.3rem;
+    }
+    #nameError{
+        right:40px;
+        top:20px;
+        font-size:1.1rem;
+    }
+    #emailError{
+        right:40px;
+        top:60px;
+        font-size:1.1rem;
+    }
+    #pay{
+        font-size:1.3rem;
+    }
+    .footer {
+        font-family: 'Russo One', sans-serif;
+        margin-top: 5%;
+    }
+    .footer-one {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin-bottom: 2%;
+        line-height: 1.5;
+        text-align: center;
+        font-size:1.4rem;
+    }
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2%;
+        padding-left: 0%;
+        font-size:1.4rem;
+    
+    }
+    .copy-wright{
+        font-size:1.4rem;
+    }
+        
+}
+/*================================DESKTOP SIZES======================================*/
+@media only screen and (max-width: 768px) and (min-width: 481px){
+    .marquee-content li{
+        font-size:1.8rem;
+    }
+    .marquee:before, .marquee:after{
+        top:200px;
+        position:relative;
+    }
+    .bookings h1{
+        font-size:2.2rem;
+    }
+    .bookings  {
+        font-size:1.5rem;
+    }
+    .choose-time button{
+        font-size:1.2rem;
+        padding:0.5em;
+    }
+    .modal-content{
+        width:80%;
+        margin:40% auto;
+        padding:2% 7%;
+    }
+    .x{
+        width:5%;
+    }
+    .input-data{
+        font-size:1.3rem;
+    }
+    #nameError{
+        right:120px;
+        top:20px;
+        font-size:1.1rem;
+    }
+    #emailError{
+        right:120px;
+        top:70px;
+        font-size:1.1rem;
+    }
+    #pay{
+        font-size:1.3rem;
+    }
+    .footer {
+        font-family: 'Russo One', sans-serif;
+        margin-top: 5%;
+    }
+    .footer-one {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin-bottom: 2%;
+        line-height: 1.5;
+        text-align: center;
+        font-size:1.4rem;
+    }
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2%;
+        padding-left: 0%;
+        font-size:1.4rem;
+    
+    }
+    .copy-wright{
+        font-size:1.4rem;
+    }
+}
+/*==========================LARGER SCREENS===============================*/
+@media only screen and (max-width: 1024px) and (min-width: 769px){
+    .marquee-content li{
+        font-size:1.8rem;
+    }
+    .marquee:before, .marquee:after{
+        top:200px;
+        position:relative;
+    }
+    .bookings h1{
+        font-size:2.2rem;
+    }
+    .bookings  {
+        font-size:1.5rem;
+    }
+    .choose-time button{
+        font-size:1.2rem;
+        padding:0.5em;
+    }
+    .modal-content{
+        width:80%;
+        margin:40% auto;
+        padding:2% 7%;
+    }
+    .x{
+        width:5%;
+    }
+    .input-data{
+        font-size:1.7rem;
+    }
+    #nameError{
+        right:120px;
+        top:20px;
+        font-size:1.1rem;
+    }
+    #emailError{
+        right:120px;
+        top:70px;
+        font-size:1.1rem;
+    }
+    #pay{
+        font-size:1.3rem;
+    }
+    .footer {
+        font-family: 'Russo One', sans-serif;
+        margin-top: 5%;
+    }
+    .footer-one {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin-bottom: 2%;
+        line-height: 1.5;
+        text-align: center;
+        font-size:1.4rem;
+    }
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2%;
+        padding-left: 0%;
+        font-size:1.4rem;
+    
+    }
+    .copy-wright{
+        font-size:1.4rem;
+    }
 }
