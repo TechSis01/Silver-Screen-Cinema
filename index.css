@@ -98,6 +98,14 @@ video {
     background-color: #D72508;
     color:white;
 }
+.play-btn:hover{
+    cursor:pointer;
+    background-color: #ced4da;
+}
+.pause-btn:hover{
+    cursor:pointer;
+    background-color: #ced4da;
+}
 
 /*==========================================================CAST PROGRESS BAR========================================================*/
 
