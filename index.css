@@ -1,629 +1,634 @@
-html {
-    font-size: 62.5%;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-size: 1.6rem;
-    background-color: #070111;
-    font-family: 'Noto Sans', sans-serif;
-    position: relative;
-}
-
-
-/*========================NAVIGATION=================================*/
-
-nav {
-    display: flex;
-    width: 85%;
-    margin: 1% 3% 0% 2%;
-    position: absolute;
-    justify-content: space-between;
-    z-index: 1;
-    align-items: center;
-    padding: 10px;
-    cursor: pointer;
-    font-family: 'Russo One', sans-serif;
-}
-
-.link {
-    font-size: 1.15em;
-}
-
-.brand-name {
-    font-family: 'Russo One', sans-serif;
-    font-size: 2.5rem;
-    color: #e70404;
-}
-
-span {
-    font-size: 1.7rem;
-}
-
-.brand-screen {
-    color: #A7B3B1;
-}
-
-.nav a {
-    text-decoration: none;
-    color: #A7B3B1;
-    cursor: pointer;
-}
-
-.link:hover {
-    cursor: pointer;
-    color: #e70404;
-}
-
-video {
-    width: 100%;
-    margin-bottom: 0;
-    z-index: -1;
-    position: relative;
-}
-
-.fa-brands:hover {
-    color: #D72508;
-}
-
-.fa-brands {
-    margin-right: 10%;
-    color: white;
-}
-
-
-/*==========================================================PAUSE AND PLAY BUTTON========================================================*/
-
-.fa-play {
-    width: 20px;
-    font-size: 1.5em;
-}
-
-.fa-pause {
-    font-size: 1.5em;
-    width: 20px;
-}
-
-.play-btn {
-    position: absolute;
-    z-index: 1;
-    top: 530px;
-    left: 50px;
-    border-radius: 50%;
-    padding: 1.5%;
-    border: none;
-    background-color: #070111;
-    color: white;
-}
-
-.pause-btn {
-    position: absolute;
-    z-index: 1;
-    top: 530px;
-    left: 130px;
-    border-radius: 50%;
-    padding: 1.5%;
-    border: none;
-    background-color: #070111;
-    color: white;
-}
-
-.play-btn:hover {
-    cursor: pointer;
-    background-color: #ced4da;
-}
-
-.pause-btn:hover {
-    cursor: pointer;
-    background-color: #ced4da;
-}
-
-img {
-    border-radius: 5px;
-}
-
-
-/*==========================================================CAST PROGRESS BAR========================================================*/
-
-progress {
-    height: 2.5px;
-    width: 96%;
-}
-
-progress[value] {
-    -webkit-appearance: none;
-    appearance: none;
-}
-
-progress[value]::-webkit-progress-value {
-    background-color: #880909;
-}
-
-
-/*==================================CURRENT MOVIES==========================*/
-
-.current-movies {
-    background-color: #070111;
-    padding: 0% 3% 0% 3%;
-    line-height: 1;
-}
-
-.current-movies h3 {
-    color: #A7B3B1;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.current-movies-grid {
-    /*display: flex;
+ html {
+     font-size: 62.5%;
+ }
+ 
+ body {
+     margin: 0;
+     padding: 0;
+     font-size: 1.6rem;
+     background-color: #070111;
+     font-family: 'Noto Sans', sans-serif;
+     position: relative;
+ }
+ /*========================NAVIGATION=================================*/
+ 
+ nav {
+     display: flex;
+     width: 85%;
+     margin: 1% 3% 0% 2%;
+     position: absolute;
+     justify-content: space-between;
+     z-index: 1;
+     align-items: center;
+     padding: 10px;
+     cursor: pointer;
+     font-family: 'Russo One', sans-serif;
+     align-items: center;
+ }
+ 
+ .link {
+     font-size: 1.15em;
+ }
+ 
+ .brand-name {
+     font-family: 'Russo One', sans-serif;
+     font-size: 2.5rem;
+     color: #e70404;
+ }
+ 
+ span {
+     font-size: 1.7rem;
+ }
+ 
+ .brand-screen {
+     color: #A7B3B1;
+ }
+ 
+ .nav a {
+     text-decoration: none;
+     color: #A7B3B1;
+     cursor: pointer;
+ }
+ 
+ .link:hover {
+     cursor: pointer;
+     color: #e70404;
+ }
+ 
+ video {
+     width: 100%;
+     margin-bottom: 0;
+     z-index: -1;
+     position: relative;
+ }
+ 
+ .fa-brands:hover {
+     color: #D72508;
+ }
+ 
+ .fa-brands {
+     margin-right: 10%;
+     color: white;
+ }
+ /*==========================================================PAUSE AND PLAY BUTTON========================================================*/
+ 
+ .fa-play {
+     width: 20px;
+     font-size: 1.5em;
+ }
+ 
+ .fa-pause {
+     font-size: 1.5em;
+     width: 20px;
+ }
+ 
+ .play-btn {
+     position: absolute;
+     z-index: 1;
+     top: 530px;
+     left: 50px;
+     border-radius: 50%;
+     padding: 1.5%;
+     border: none;
+     background-color: #070111;
+     color: white;
+ }
+ 
+ .pause-btn {
+     position: absolute;
+     z-index: 1;
+     top: 530px;
+     left: 130px;
+     border-radius: 50%;
+     padding: 1.5%;
+     border: none;
+     background-color: #070111;
+     color: white;
+ }
+ 
+ .play-btn:hover {
+     cursor: pointer;
+     background-color: #ced4da;
+ }
+ 
+ .pause-btn:hover {
+     cursor: pointer;
+     background-color: #ced4da;
+ }
+ 
+ img {
+     border-radius: 5px;
+ }
+ /*==========================================================CAST PROGRESS BAR========================================================*/
+ 
+ progress {
+     height: 2.5px;
+     width: 96%;
+ }
+ 
+ progress[value] {
+     -webkit-appearance: none;
+     appearance: none;
+ }
+ 
+ progress[value]::-webkit-progress-value {
+     background-color: #880909;
+ }
+ /*===================================================CURRENT MOVIES===============================================================*/
+ 
+ .current-movies {
+     background-color: #070111;
+     padding: 0% 3% 0% 3%;
+     line-height: 1;
+ }
+ 
+ .current-movies h3 {
+     color: #A7B3B1;
+     font-size: 2rem;
+     font-weight: bold;
+ }
+ 
+ .current-movies-grid {
+     /*display: flex;
     justify-content: space-around;*/
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    margin-top: 3%;
-}
-
-.movie {
-    width: 200px;
-    border-radius: 5px;
-    ;
-}
-
-.current-movies p {
-    color: #ced4da;
-}
-
-#more {
-    text-align: end;
-}
-
-.current-movies a {
-    text-decoration: none;
-    color: #D72508;
-}
-
-
-/*//////////////////////////////////////COMING SOON SECTION//////////////////////////////////////*/
-
-.movies-coming-soon {
-    padding: 3% 0 0 3%;
-}
-
-.movies-coming-soon h3 {
-    color: #ced4da;
-    font-size: 2.5rem;
-}
-
-.movies-coming-soon p {
-    color: #ced4da;
-}
-
-
-/*///////////////////////////////////NEWS BOX///////////////////////////////////*/
-
-.news {
-    padding-top: 2%;
-}
-
-.news-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding-top: 5%;
-}
-
-.news-info {
-    width: 300px;
-}
-
-.news-para {
-    color: #ced4da;
-    font-size: 1.3rem;
-}
-
-.news h4 {
-    text-align: center;
-    color: #ced4da;
-    font-size: 2.5rem;
-}
-
-
-/*//////////////////////////////////FOOTER////////////////////////////////////////*/
-
-.footer {
-    font-family: 'Russo One', sans-serif;
-    margin-top: 5%;
-}
-
-.footer span {
-    color: #D72508;
-    font-size: 2.0rem;
-}
-
-.footer-one {
-    display: flex;
-    justify-content: space-between;
-    color: #A7B3B1;
-    padding: 5% 3% 5% 3%;
-    align-items: center;
-}
-
-.footer-links {
-    display: flex;
-    justify-content: space-around;
-    width: 50%;
-    padding-left: 15%;
-    font-size: 1.4em;
-}
-
-.footer a {
-    text-decoration: none;
-    color: #A7B3B1;
-}
-
-.footer-social {
-    width: 25%;
-    color: white;
-}
-
-.copy-wright {
-    text-align: center;
-    font-size: 1.3em;
-    color: #6d7275;
-}
-
-.footer-social {
-    display: flex;
-    justify-content: space-around;
-    font-size: 1.6em;
-}
-
-.footer a:hover {
-    transform: scale(1, 1.05);
-    transition-delay: 0.0001s;
-    color: #D72508;
-}
-
-#preloader {
-    background: #070111 url(./movies/loaderloader.gif) no-repeat center;
-    background-size: 50%;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-}
-
-
-/*======================================MEDIA QUERIES==================================*/
-
-@media (max-width:280px) {
-    .brand-name {
-        font-size: 1.2rem;
-    }
-    span {
-        font-size: 0.9rem;
-    }
-    .link {
-        font-size: 0.7rem;
-    }
-    .current-movies h3 {
-        font-size: 2.0rem;
-    }
-    .current-movies-grid {
-        padding: 0% 0% 5%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-column-gap: 5px;
-        text-align: center;
-    }
-    .current-movies p {
-        font-size: 1.1rem;
-    }
-    .movie {
-        width: 200px;
-    }
-    .movies-coming-soon h3 {
-        font-size: 2.0rem;
-    }
-    .movies-coming-soon p {
-        font-size: 1.1rem;
-        line-height: 1;
-    }
-    .news-box {
-        grid-template-columns: 1fr;
-        padding: 0 5%;
-    }
-    .news-info {
-        width: 250px;
-    }
-    .main-news {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .zendaya {
-        padding-left: 5%;
-    }
-    .footer-one {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        margin-bottom: 2%;
-        line-height: 1.5;
-        text-align: center;
-        font-size: 1.1rem;
-    }
-    .footer-links {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 2%;
-        padding-left: 0%;
-        font-size: 1.1rem;
-    }
-    .copy-wright {
-        font-size: 1.1rem;
-    }
-    .footer-social a {
-        font-size: 1.1rem;
-    }
-    .play-btn {
-        top: 80px;
-        left: 50px;
-        padding: 2%;
-    }
-    .pause-btn {
-        top: 80px;
-        left: 80px;
-        padding: 2%;
-    }
-}
-
-
-/*=====================================MEDIA QUERIES(SMALL SCREENS)==================================================>*/
-
-@media only screen and (max-width: 480px) and (min-width: 320px) {
-    .brand-name {
-        font-size: 1.2rem;
-    }
-    span {
-        font-size: 0.9rem;
-    }
-    .link {
-        font-size: 1.1rem;
-    }
-    .current-movies h3 {
-        font-size: 2.0rem;
-    }
-    .current-movies-grid {
-        padding: 0% 0% 5%;
-        grid-template-columns: 1fr;
-        grid-column-gap: 5px;
-        text-align: center;
-    }
-    .current-movies p {
-        font-size: 2rem;
-    }
-    .movie {
-        width: 70%;
-        margin: 2% 0;
-    }
-    .movies-coming-soon h3 {
-        font-size: 2.0rem;
-    }
-    .movies-coming-soon p {
-        font-size: 2rem;
-        line-height: 1;
-    }
-    .news-box {
-        grid-template-columns: 1fr;
-    }
-    .news-info {
-        width: 280px;
-        margin: 2% 0;
-        border-radius: 5px;
-        ;
-    }
-    .main-news {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .main-news p {
-        font-size: 1.8rem;
-        width: 70%;
-        margin: 2% auto;
-    }
-    .zendaya {
-        padding-left: 5%;
-    }
-    .footer-one {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        margin-bottom: 2%;
-        line-height: 1.5;
-        text-align: center;
-        font-size: 1.4rem;
-    }
-    .footer-links {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 2%;
-        padding-left: 0%;
-        font-size: 1.4rem;
-    }
-    .copy-wright {
-        font-size: 1.4rem;
-    }
-    .play-btn {
-        top: 120px;
-        left: 10px;
-        padding: 2%;
-    }
-    .pause-btn {
-        top: 120px;
-        left: 50px;
-        padding: 2%;
-    }
-}
-
-@media only screen and (max-width: 768px) and (min-width: 481px) {
-    .brand-name {
-        font-size: 1.6rem;
-    }
-    span {
-        font-size: 0.9rem;
-    }
-    .link {
-        font-size: 1.3rem;
-    }
-    .current-movies h3 {
-        font-size: 2.0rem;
-    }
-    .current-movies-grid {
-        padding: 0% 0% 5%;
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 5px;
-        text-align: center;
-    }
-    .current-movies p {
-        font-size: 2rem;
-    }
-    .movie {
-        width: 70%;
-    }
-    .movies-coming-soon h3 {
-        font-size: 2.0rem;
-    }
-    .movies-coming-soon p {
-        font-size: 2rem;
-        line-height: 1;
-    }
-    .news-box {
-        grid-template-columns: 1fr 1fr;
-    }
-    .news-info {
-        width: 280px;
-    }
-    .main-news {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .main-news p {
-        width: 70%;
-        margin: 2% auto;
-        font-size: 1.5rem;
-    }
-    .zendaya {
-        padding-left: 5%;
-    }
-    .footer-one {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        margin-bottom: 2%;
-        line-height: 1.5;
-        text-align: center;
-        font-size: 1.6rem;
-    }
-    .footer-links {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 2%;
-        padding-left: 0%;
-        font-size: 1.6rem;
-    }
-    .copy-wright {
-        font-size: 1.6rem;
-    }
-    .play-btn {
-        top: 240px;
-        left: 30px;
-    }
-    .pause-btn {
-        top: 240px;
-        left: 80px;
-    }
-}
-
-@media only screen and (max-width: 1024px) and (min-width: 769px) {
-    .brand-name {
-        font-size: 1.6rem;
-    }
-    span {
-        font-size: 0.9rem;
-    }
-    .link {
-        font-size: 1.3rem;
-    }
-    .current-movies h3 {
-        font-size: 2.0rem;
-    }
-    .current-movies-grid {
-        padding: 0% 0% 5%;
-        grid-template-columns: repeat(4, 1fr);
-        grid-column-gap: 5px;
-        text-align: center;
-    }
-    .current-movies p {
-        font-size: 1.2rem;
-    }
-    .movie {
-        width: 150px;
-    }
-    .movies-coming-soon h3 {
-        font-size: 2.0rem;
-    }
-    .movies-coming-soon p {
-        font-size: 1.2rem;
-        line-height: 1;
-    }
-    .news-box {
-        grid-template-columns: 1fr 1fr;
-    }
-    .news-info {
-        width: 280px;
-    }
-    .main-news {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .main-news p {
-        width: 70%;
-        margin: 0 auto;
-    }
-    .zendaya {
-        padding-left: 5%;
-    }
-    .footer-one {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        margin-bottom: 2%;
-        line-height: 1.5;
-        text-align: center;
-        font-size: 1.6rem;
-    }
-    .footer-links {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 2%;
-        padding-left: 0%;
-        font-size: 1.6rem;
-    }
-    .copy-wright {
-        font-size: 1.6rem;
-    }
-    .play-btn {
-        top: 350px;
-        left: 20px;
-    }
-    .pause-btn {
-        top: 350px;
-        left: 80px;
-    }
-}
+     display: grid;
+     grid-template-columns: repeat(5, 1fr);
+     margin-top: 3%;
+ }
+ 
+ .movie {
+     width: 200px;
+     border-radius: 5px;
+     ;
+ }
+ 
+ .current-movies p {
+     color: #ced4da;
+ }
+ 
+ #more {
+     text-align: end;
+ }
+ 
+ .current-movies a {
+     text-decoration: none;
+     color: #D72508;
+ }
+ /*====================================================================COMING SOON SECTION==========================================*/
+ 
+ .movies-coming-soon {
+     padding: 3% 0 0 3%;
+ }
+ 
+ .movies-coming-soon h3 {
+     color: #ced4da;
+     font-size: 2.5rem;
+ }
+ 
+ .movies-coming-soon p {
+     color: #ced4da;
+ }
+ /*================================================================NEWS BOX========================================================*/
+ 
+ .news {
+     padding-top: 2%;
+ }
+ 
+ .news-box {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     padding-top: 5%;
+ }
+ 
+ .news-info {
+     width: 300px;
+ }
+ 
+ .news-para {
+     color: #ced4da;
+     font-size: 1.3rem;
+ }
+ 
+ .news h4 {
+     text-align: center;
+     color: #ced4da;
+     font-size: 2.5rem;
+ }
+ /*=========================================================FOOTER===============================================================*/
+ 
+ .footer {
+     font-family: 'Russo One', sans-serif;
+     margin-top: 5%;
+ }
+ 
+ .footer span {
+     color: #D72508;
+     font-size: 2.0rem;
+ }
+ 
+ .footer-one {
+     display: flex;
+     justify-content: space-between;
+     color: #A7B3B1;
+     padding: 5% 3% 5% 3%;
+     align-items: center;
+ }
+ 
+ .footer-links {
+     display: flex;
+     justify-content: space-around;
+     width: 50%;
+     padding-left: 15%;
+     font-size: 1.4em;
+ }
+ 
+ .footer a {
+     text-decoration: none;
+     color: #A7B3B1;
+ }
+ 
+ .footer-social {
+     width: 25%;
+     color: white;
+ }
+ 
+ .copy-wright {
+     text-align: center;
+     font-size: 1.3em;
+     color: #6d7275;
+ }
+ 
+ .footer-social {
+     display: flex;
+     justify-content: space-around;
+     font-size: 1.6em;
+ }
+ 
+ .footer a:hover {
+     transform: scale(1, 1.05);
+     transition-delay: 0.0001s;
+     color: #D72508;
+ }
+ 
+ #preloader {
+     background: #070111 url(./movies/loaderloader.gif) no-repeat center;
+     background-size: 50%;
+     height: 100vh;
+     width: 100%;
+     position: fixed;
+     z-index: 100;
+ }
+ /*======================================MEDIA QUERIES==================================*/
+ 
+ @media (max-width:280px) {
+     .brand-name {
+         font-size: 1.2rem;
+     }
+     span {
+         font-size: 0.9rem;
+     }
+     .link {
+         font-size: 0.7rem;
+     }
+     .current-movies h3 {
+         font-size: 2.0rem;
+     }
+     .current-movies-grid {
+         padding: 0% 0% 5%;
+         grid-template-columns: repeat(1, 1fr);
+         grid-column-gap: 5px;
+         text-align: center;
+     }
+     .current-movies p {
+         font-size: 1.1rem;
+     }
+     .movie {
+         width: 200px;
+     }
+     .movies-coming-soon h3 {
+         font-size: 2.0rem;
+     }
+     .movies-coming-soon p {
+         font-size: 1.1rem;
+         line-height: 1;
+     }
+     .news-box {
+         grid-template-columns: 1fr;
+         padding: 0 5%;
+     }
+     .news-info {
+         width: 250px;
+     }
+     .main-news {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+     .zendaya {
+         padding-left: 5%;
+     }
+     .footer-one {
+         display: flex;
+         flex-direction: column;
+         padding: 10px;
+         margin-bottom: 2%;
+         line-height: 1.5;
+         text-align: center;
+         font-size: 1.1rem;
+     }
+     .footer-links {
+         display: flex;
+         flex-direction: column;
+         margin-bottom: 2%;
+         padding-left: 0%;
+         font-size: 1.1rem;
+     }
+     .copy-wright {
+         font-size: 1.1rem;
+     }
+     .footer-social a {
+         font-size: 1.1rem;
+     }
+     .play-btn {
+         top: 80px;
+         left: 50px;
+         padding: 2%;
+     }
+     .pause-btn {
+         top: 80px;
+         left: 80px;
+         padding: 2%;
+     }
+ }
+ /*=====================================MEDIA QUERIES(SMALL SCREENS)==================================================>*/
+ 
+ @media only screen and (max-width: 480px) and (min-width: 320px) {
+     .brand-name {
+         font-size: 1.2rem;
+     }
+     span {
+         font-size: 0.9rem;
+     }
+     .link {
+         font-size: 1.1rem;
+     }
+     .current-movies h3 {
+         font-size: 2.0rem;
+     }
+     .current-movies-grid {
+         padding: 0% 0% 5%;
+         grid-template-columns: 1fr;
+         grid-column-gap: 5px;
+         text-align: center;
+     }
+     .current-movies p {
+         font-size: 2rem;
+     }
+     .movie {
+         width: 90%;
+         margin: 2% 0;
+     }
+     .movies-coming-soon h3 {
+         font-size: 2.0rem;
+     }
+     .movies-coming-soon p {
+         font-size: 2rem;
+         line-height: 1;
+     }
+     .news-box {
+         grid-template-columns: 1fr;
+     }
+     .news-info {
+         width: 280px;
+         margin: 2% 0;
+         border-radius: 5px;
+         ;
+     }
+     .main-news {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+     .main-news img {
+         width: 90%;
+     }
+     .main-news p {
+         font-size: 1.8rem;
+         width: 90%;
+         margin: 2% auto;
+         text-align: justify;
+         line-height: 1.7;
+     }
+     .zendaya {
+         padding-left: 5%;
+     }
+     .footer-one {
+         display: flex;
+         flex-direction: column;
+         padding: 10px;
+         margin-bottom: 2%;
+         line-height: 1.5;
+         text-align: center;
+         font-size: 1.4rem;
+     }
+     .footer-links {
+         display: flex;
+         flex-direction: column;
+         margin-bottom: 2%;
+         padding-left: 0%;
+         font-size: 1.4rem;
+     }
+     .copy-wright {
+         font-size: 1.4rem;
+     }
+     .play-btn {
+         top: 120px;
+         left: 10px;
+         padding: 2%;
+     }
+     .pause-btn {
+         top: 120px;
+         left: 50px;
+         padding: 2%;
+     }
+ }
+ 
+ @media only screen and (max-width: 768px) and (min-width: 481px) {
+     .brand-name {
+         font-size: 1.6rem;
+     }
+     span {
+         font-size: 0.9rem;
+     }
+     .link {
+         font-size: 1.3rem;
+     }
+     .current-movies h3 {
+         font-size: 2.0rem;
+     }
+     .current-movies-grid {
+         padding: 0% 0% 5%;
+         grid-template-columns: 1fr;
+         grid-column-gap: 5px;
+         text-align: center;
+     }
+     .current-movies p {
+         font-size: 3.5rem;
+     }
+     .movie {
+         width: 90%;
+     }
+     .movies-coming-soon h3 {
+         font-size: 2.0rem;
+     }
+     .movies-coming-soon p {
+         font-size: 3.5rem;
+         line-height: 1;
+     }
+     .news-box {
+         grid-template-columns: repeat(1, 1fr);
+     }
+     .news-info {
+         width: 280px;
+     }
+     .main-news img {
+         width: 90%;
+     }
+     .main-news {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+     }
+     .main-news p {
+         width: 90%;
+         margin: 2% auto;
+         font-size: 3.2rem;
+         text-align: justify;
+         line-height: 1.7;
+     }
+     .zendaya {
+         padding-left: 5%;
+     }
+     .footer span {
+         font-size: 4rem;
+     }
+     .footer-one {
+         display: flex;
+         flex-direction: column;
+         padding: 10px;
+         margin-bottom: 2%;
+         line-height: 1.5;
+         text-align: center;
+         font-size: 3rem;
+     }
+     .footer-links {
+         display: flex;
+         flex-direction: column;
+         margin-bottom: 2%;
+         padding-left: 0%;
+         font-size: 3rem;
+     }
+     .copy-wright {
+         font-size: 3rem;
+     }
+     .play-btn {
+         top: 240px;
+         left: 30px;
+     }
+     .pause-btn {
+         top: 240px;
+         left: 80px;
+     }
+ }
+ 
+ @media only screen and (max-width: 1024px) and (min-width: 769px) {
+     .brand-name {
+         font-size: 1.6rem;
+     }
+     span {
+         font-size: 0.9rem;
+     }
+     .link {
+         font-size: 1.3rem;
+     }
+     .current-movies h3 {
+         font-size: 2.0rem;
+     }
+     .current-movies-grid {
+         padding: 0% 0% 5%;
+         grid-template-columns: repeat(2, 1fr);
+         grid-column-gap: 5px;
+         text-align: center;
+     }
+     .current-movies p {
+         font-size: 3rem;
+     }
+     .movie {
+         width: 90%;
+     }
+     .movies-coming-soon h3 {
+         font-size: 2.1rem;
+     }
+     .movies-coming-soon p {
+         font-size: 2.7rem;
+         line-height: 1;
+     }
+     .news-box {
+         grid-template-columns: 1fr 1fr;
+     }
+     .news-info {
+         margin-top: 2%;
+         width: 280px;
+     }
+     .main-news {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+     .main-news img {
+         width: 90%;
+     }
+     .main-news p {
+         width: 90%;
+         margin: 2% auto;
+         font-size: 2.7rem;
+         line-height: 1.7;
+     }
+     .zendaya {
+         padding-left: 5%;
+     }
+     .footer-one {
+         display: flex;
+         flex-direction: column;
+         padding: 10px;
+         margin-bottom: 2%;
+         line-height: 1.5;
+         text-align: center;
+         font-size: 2.9rem;
+     }
+     .footer span {
+         font-size: 4rem;
+     }
+     .footer-links {
+         display: flex;
+         flex-direction: column;
+         margin-bottom: 2%;
+         padding-left: 0%;
+         font-size: 2.8rem;
+     }
+     .copy-wright {
+         font-size: 2.9rem;
+     }
+     .play-btn {
+         top: 350px;
+         left: 20px;
+     }
+     .pause-btn {
+         top: 350px;
+         left: 80px;
+     }
+ }
