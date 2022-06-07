@@ -1,4 +1,4 @@
-html {
+        html {
     font-size: 62.5%;
 }
 
@@ -173,6 +173,7 @@ body {
 
 img {
     width: 250px;
+    height: auto;
     border-radius: 5px;
 }
 
@@ -304,217 +305,217 @@ h4 {
         top: 200px;
         position: relative;
     }
-    img {
+    <<<<<<< HEAD img {
         width: 150px;
+        =======img {
+            width: 70%;
+            >>>>>>>e92bd8f69e02556ea0f6c280ed33280fd54fe178
+        }
+        h4 {
+            font-size: 2.0rem;
+            margin-top: 2%;
+        }
+        .main-movie p {
+            font-size: 1.2rem;
+        }
+        .main-movie a {
+            font-size: 1.2rem;
+        }
+        .main-movie {
+            flex-direction: column;
+        }
+        .footer-one {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            margin-bottom: 2%;
+            line-height: 2;
+            text-align: center;
+            font-size: 1.4rem;
+        }
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2%;
+            padding-left: 0%;
+            font-size: 1.4rem;
+        }
+        .copy-wright {
+            font-size: 1.4rem;
+        }
     }
-    h4 {
-        font-size: 2.0rem;
-        margin-top: 2%;
-    }
-    .main-movie p {
-        font-size: 1.2rem;
-    }
-    .main-movie a {
-        font-size: 1.2rem;
-    }
-    .main-movie {
-        flex-direction: column;
-    }
-    .footer-one {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        margin-bottom: 2%;
-        line-height: 2;
-        text-align: center;
-        font-size: 1.4rem;
-    }
-    .footer-links {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 2%;
-        padding-left: 0%;
-        font-size: 1.4rem;
-    }
-    .copy-wright {
-        font-size: 1.4rem;
-    }
-}
-
-@media only screen and (max-width: 480px) and (min-width: 320px) {
-    .navigation a {
-        font-size: 1.2rem;
-    }
-    .navigation button .navbar-toggler-icon {
-        font-size: 1.05em;
-    }
-    .navbar-nav a {
-        margin-left: 45%;
-    }
-    .movie-times-main {
-        grid-template-columns: 1fr;
-    }
-    .movie-info {
-        margin-left: 5%;
-    }
-    .marquee-content li {
-        font-size: 2.0rem;
-    }
-    .marquee:before,
-    .marquee:after {
-        top: 200px;
-        position: relative;
-    }
-    img {
-        width: 150px;
-    }
-    h4 {
-        font-size: 2.0rem;
-        margin-top: 2%;
-    }
-    .main-movie p {
-        font-size: 1.2rem;
-    }
-    .main-movie a {
-        font-size: 1.2rem;
-    }
-    .footer-one {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        margin-bottom: 2%;
-        line-height: 2;
-        text-align: center;
-        font-size: 1.4rem;
-    }
-    .footer-links {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 2%;
-        padding-left: 0%;
-        font-size: 1.4rem;
-    }
-    .copy-wright {
-        font-size: 1.4rem;
-    }
-}
-
-
-/*====================DESKTOP SIZES============================*/
-
-@media only screen and (max-width: 768px) and (min-width: 481px) {
-    .navigation a {
-        font-size: 1.2rem;
-    }
-    .navigation button .navbar-toggler-icon {
-        font-size: 1.05em;
-    }
-    .navbar-nav a {
-        margin-left: 45%;
-    }
-    .movie-times-main {
-        grid-template-columns: 1fr 1fr;
-    }
-    .movie-info {
-        margin-left: 5%;
-    }
-    .marquee-content li {
-        font-size: 2.5rem;
-    }
-    .marquee:before,
-    .marquee:after {
-        top: 200px;
-        position: relative;
-    }
-    img {
-        width: 150px;
-    }
-    h4 {
-        font-size: 2.0rem;
-        margin-top: 2%;
-    }
-    .main-movie p {
-        font-size: 1.2rem;
-    }
-    .main-movie a {
-        font-size: 1.2rem;
-    }
-    .footer-one {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        margin-bottom: 2%;
-        line-height: 2;
-        text-align: center;
-        font-size: 1.4rem;
-    }
-    .footer-links {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 2%;
-        padding-left: 0%;
-        font-size: 1.4rem;
-    }
-    .copy-wright {
-        font-size: 1.4rem;
-    }
-}
-
-
-/*======================================LARGER SCREEN SIZES===========================================*/
-
-@media only screen and (max-width: 1024px) and (min-width: 769px) {
-    .navigation a {
-        font-size: 1.5rem;
-    }
-    .navigation button .navbar-toggler-icon {
-        font-size: 1.05em;
-    }
-    .navbar-nav a {
-        margin-left: 45%;
-    }
-    .movie-times-main {
-        grid-template-columns: 1fr 1fr;
-    }
-    .movie-info {
-        margin-left: 5%;
-    }
-    .marquee-content li {
-        font-size: 3.0rem;
-    }
-    .marquee:before,
-    .marquee:after {
-        top: 200px;
-        position: relative;
-    }
-    img {
-        width: 200px;
-    }
-    h4 {
-        font-size: 2.5rem;
-        margin-top: 2%;
-    }
-    .main-movie p {
-        font-size: 1.3rem;
-    }
-    .main-movie a {
-        font-size: 1.6rem;
-    }
-    .footer-one {
-        display: flex;
-        padding: 10px;
-        margin-bottom: 2%;
-        line-height: 2;
-        text-align: center;
-        font-size: 1.4rem;
-    }
-    .footer-links {
-        display: flex;
-        margin-bottom: 2%;
-        padding-left: 0%;
-        font-size: 1.4rem;
-    }
-    .copy-wright {
-        font-size: 1.4rem;
-    }
-}
+    @media only screen and (max-width: 480px) and (min-width: 320px) {
+        .navigation a {
+            font-size: 1.2rem;
+        }
+        .navigation button .navbar-toggler-icon {
+            font-size: 1.05em;
+        }
+        .navbar-nav a {
+            margin-left: 45%;
+        }
+        .movie-times-main {
+            grid-template-columns: 1fr;
+        }
+        .movie-info {
+            margin-left: 5%;
+        }
+        .marquee-content li {
+            font-size: 2.0rem;
+        }
+        .marquee:before,
+        .marquee:after {
+            top: 200px;
+            position: relative;
+        }
+        <<<<<<< HEAD img {
+            width: 150px;
+            =======img {
+                width: 50%;
+                height: auto;
+                >>>>>>>e92bd8f69e02556ea0f6c280ed33280fd54fe178
+            }
+            h4 {
+                font-size: 2.0rem;
+                margin-top: 2%;
+            }
+            .main-movie p {
+                font-size: 1.2rem;
+            }
+            .main-movie a {
+                font-size: 1.2rem;
+            }
+            .footer-one {
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                margin-bottom: 2%;
+                line-height: 2;
+                text-align: center;
+                font-size: 1.4rem;
+            }
+            .footer-links {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 2%;
+                padding-left: 0%;
+                font-size: 1.4rem;
+            }
+            .copy-wright {
+                font-size: 1.4rem;
+            }
+        }
+        /*====================DESKTOP SIZES============================*/
+        @media only screen and (max-width: 768px) and (min-width: 481px) {
+            .navigation a {
+                font-size: 1.2rem;
+            }
+            .navigation button .navbar-toggler-icon {
+                font-size: 1.05em;
+            }
+            .navbar-nav a {
+                margin-left: 45%;
+            }
+            .movie-times-main {
+                grid-template-columns: 1fr 1fr;
+            }
+            .movie-info {
+                margin-left: 5%;
+            }
+            .marquee-content li {
+                font-size: 2.5rem;
+            }
+            .marquee:before,
+            .marquee:after {
+                top: 200px;
+                position: relative;
+            }
+            img {
+                width: 150px;
+            }
+            h4 {
+                font-size: 2.0rem;
+                margin-top: 2%;
+            }
+            .main-movie p {
+                font-size: 1.2rem;
+            }
+            .main-movie a {
+                font-size: 1.2rem;
+            }
+            .footer-one {
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                margin-bottom: 2%;
+                line-height: 2;
+                text-align: center;
+                font-size: 1.4rem;
+            }
+            .footer-links {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 2%;
+                padding-left: 0%;
+                font-size: 1.4rem;
+            }
+            .copy-wright {
+                font-size: 1.4rem;
+            }
+        }
+        /*======================================LARGER SCREEN SIZES===========================================*/
+        @media only screen and (max-width: 1024px) and (min-width: 769px) {
+            .navigation a {
+                font-size: 1.5rem;
+            }
+            .navigation button .navbar-toggler-icon {
+                font-size: 1.05em;
+            }
+            .navbar-nav a {
+                margin-left: 45%;
+            }
+            .movie-times-main {
+                grid-template-columns: 1fr 1fr;
+            }
+            .movie-info {
+                margin-left: 5%;
+            }
+            .marquee-content li {
+                font-size: 3.0rem;
+            }
+            .marquee:before,
+            .marquee:after {
+                top: 200px;
+                position: relative;
+            }
+            img {
+                width: 200px;
+            }
+            h4 {
+                font-size: 2.5rem;
+                margin-top: 2%;
+            }
+            .main-movie p {
+                font-size: 1.3rem;
+            }
+            .main-movie a {
+                font-size: 1.6rem;
+            }
+            .footer-one {
+                display: flex;
+                padding: 10px;
+                margin-bottom: 2%;
+                line-height: 2;
+                text-align: center;
+                font-size: 1.4rem;
+            }
+            .footer-links {
+                display: flex;
+                margin-bottom: 2%;
+                padding-left: 0%;
+                font-size: 1.4rem;
+            }
+            .copy-wright {
+                font-size: 1.4rem;
+            }
+        }
