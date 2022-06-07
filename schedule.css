@@ -274,7 +274,7 @@ h4{
         position:relative;
     }
     img{
-        width:150px;
+        width:70%;
     }
     h4{
         font-size:2.0rem;
@@ -327,7 +327,8 @@ h4{
         position:relative;
     }
     img{
-        width:150px;
+        width:50%;
+        height: auto;
     }
     h4{
         font-size:2.0rem;
