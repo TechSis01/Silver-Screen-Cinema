@@ -479,21 +479,21 @@ progress[value]::-webkit-progress-value {
     }
     .current-movies-grid {
         padding: 0% 0% 5%;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-column-gap: 5px;
         text-align: center;
     }
     .current-movies p {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     .movie {
-        width: 70%;
+        width: 60%;
     }
     .movies-coming-soon h3 {
         font-size: 2.0rem;
     }
     .movies-coming-soon p {
-        font-size:2rem;
+        font-size:2.5rem;
         line-height: 1;
     }
     .news-box {
@@ -511,7 +511,7 @@ progress[value]::-webkit-progress-value {
     .main-news p{
         width:70%;
         margin:2% auto;
-        font-size:1.5rem;
+        font-size:1.6rem;
     }
     .zendaya {
         padding-left: 5%;
@@ -560,27 +560,28 @@ progress[value]::-webkit-progress-value {
     }
     .current-movies-grid {
         padding: 0% 0% 5%;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 5px;
         text-align: center;
     }
     .current-movies p {
-        font-size: 1.2rem;
+        font-size: 2.5rem;
     }
     .movie {
-        width: 150px;
+        width: 70%;
     }
     .movies-coming-soon h3 {
         font-size: 2.0rem;
     }
     .movies-coming-soon p {
-        font-size: 1.2rem;
+        font-size: 2.5rem;
         line-height: 1;
     }
     .news-box {
        grid-template-columns: 1fr 1fr;
     }
     .news-info {
+        margin-top:2%;
         width: 280px;
     }
     .main-news{
@@ -588,10 +589,12 @@ progress[value]::-webkit-progress-value {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
     }
     .main-news p{
         width:70%;
-        margin:0 auto;
+        margin:2% auto;
+        font-size:1.7rem;
     }
     .zendaya {
         padding-left: 5%;
