@@ -586,7 +586,10 @@ form {
 
 /*==========================LARGER SCREENS===============================*/
 
-@media only screen and (max-width: 1024px) and (min-width: 769px) {
+@media only screen and (max-width: 1560px) and (min-width: 769px) {
+    body{
+        height:50%;
+    }
     .marquee-content li {
         font-size: 1.8rem;
     }
@@ -642,8 +645,8 @@ form {
     .footer-one {
         display: flex;
         flex-direction: column;
-        padding: 10px;
-        margin-bottom: 2%;
+       /* padding: px;
+        margin-bottom:*/
         line-height: 1.5;
         text-align: center;
         font-size: 1.4rem;
