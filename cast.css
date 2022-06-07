@@ -139,7 +139,7 @@
 
 /*==========================================================CAST BUTTON========================================================*/
 
-.cast-text button {
+.book-ticket-link {
     width: 180px;
     margin-top: 5%;
     padding: 10px;
@@ -149,9 +149,10 @@
     font-size: 16px;
     font-weight: bold;
     border: 0px;
+    text-decoration: none;
 }
 
-.cast button:hover {
+.book-ticket-link:hover {
     transform: scale(1, 1.03);
     background-color: #3d1b74;
     color: #A7B3B1;
