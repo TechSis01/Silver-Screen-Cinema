@@ -189,8 +189,8 @@ progress[value]::-webkit-progress-value {
 }
 
 .news-box {
-    display: flex;
-    justify-content: space-evenly;
+   display:grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-top: 5%;
 }
 
@@ -309,11 +309,17 @@ progress[value]::-webkit-progress-value {
         line-height: 1;
     }
     .news-box {
-        flex-wrap: wrap;
+       grid-template-columns: 1fr;
         padding: 0 5%;
     }
     .news-info {
         width: 250px;
+    }
+    .main-news{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .zendaya {
         padding-left: 5%;
@@ -379,6 +385,7 @@ progress[value]::-webkit-progress-value {
     }
     .movie {
         width: 150px;
+        margin: 2% 0;
     }
     .movies-coming-soon h3 {
         font-size: 2.0rem;
@@ -388,10 +395,23 @@ progress[value]::-webkit-progress-value {
         line-height: 1;
     }
     .news-box {
-        flex-wrap: wrap;
+        grid-template-columns: 1fr;
     }
     .news-info {
         width: 280px;
+        margin: 2% 0;
+        border-radius: 5px;;
+    }
+    .main-news{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-news p{
+        width:70%;
+        margin:2% auto;
+       
     }
     .zendaya {
         padding-left: 5%;
@@ -464,10 +484,20 @@ progress[value]::-webkit-progress-value {
         line-height: 1;
     }
     .news-box {
-        flex-wrap: wrap;
+        grid-template-columns: 1fr 1fr;
     }
     .news-info {
         width: 280px;
+    }
+    .main-news{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .main-news p{
+        width:70%;
+        margin:0 auto;
     }
     .zendaya {
         padding-left: 5%;
@@ -541,10 +571,20 @@ progress[value]::-webkit-progress-value {
         line-height: 1;
     }
     .news-box {
-        flex-wrap: wrap;
+       grid-template-columns: 1fr 1fr;
     }
     .news-info {
         width: 280px;
+    }
+    .main-news{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-news p{
+        width:70%;
+        margin:0 auto;
     }
     .zendaya {
         padding-left: 5%;
