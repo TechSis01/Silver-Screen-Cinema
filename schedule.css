@@ -1,17 +1,20 @@
-
-html{
-    font-size:62.5%;
-    
+html {
+    font-size: 62.5%;
 }
-body{
+
+body {
     box-sizing: border-box;
     background-color: #070111;
-    padding:0;
-    margin:0;
-    font-size:1.6rem;
+    padding: 0;
+    margin: 0;
+    font-size: 1.6rem;
     font-family: 'Noto Sans', sans-serif;
 }
+
+
 /*=====================================NAVIGATION====================================*/
+
+
 /*.navigation button .navbar-toggler-icon {
     font-size: 1.2em;
 }
@@ -53,6 +56,7 @@ body{
     transition-delay: 0.0001s;
     color: #e70404;
 }*/
+
 .navigation button .navbar-toggler-icon {
     font-size: 1.2em;
 }
@@ -86,7 +90,7 @@ body{
 
 .navbar-nav a {
     gap: 8em;
-    margin-left: 60%;
+    margin-left: 80%;
 }
 
 .navigation a:hover {
@@ -97,108 +101,133 @@ body{
 
 
 /*==========================================MOVIE TIMES=================================================*/
-.movie-times{
-  color:#A7B3B1;
-}
-.marquee{
-    width:100%;
-    height:10vw;
-    margin-top: 5%;
-    background-color:#070111;
-    color:#D72508;
-    overflow:hidden;
-    font-weight: bold;
-    font-family: 'Russo One', sans-serif; 
-}
-.marquee:before, .marquee:after{
-    position:absolute;
-    top:60px;
-    height:50%;
-    width:10rem;
-    content:"";
-    z-index:1;
-}
-.marquee:before{
-    left:0;
-    background:linear-gradient(to right, #070111 0%, transparent 100%)
-}
-.marquee:after{
-    right:0;
-    background: linear-gradient(to left, #070111 0%, transparent 100%);
-}
-.marquee-content{
-    display:flex;
-    justify-content: space-around;
-    height:100%;
-    list-style:none;
-    animation:scrolling 25s linear infinite;
+
+.movie-times {
+    color: #A7B3B1;
 }
 
-@keyframes scrolling{
-    0%{transform: translateX(0vw);}
-    100%{transform:translateX(-100vw);}
+.marquee {
+    width: 100%;
+    height: 10vw;
+    margin-top: 5%;
+    background-color: #070111;
+    color: #D72508;
+    overflow: hidden;
+    font-weight: bold;
+    font-family: 'Russo One', sans-serif;
 }
-.marquee-content li{
-    display:flex;
+
+.marquee:before,
+.marquee:after {
+    position: absolute;
+    top: 60px;
+    height: 50%;
+    width: 10rem;
+    content: "";
+    z-index: 1;
+}
+
+.marquee:before {
+    left: 0;
+    background: linear-gradient(to right, #070111 0%, transparent 100%)
+}
+
+.marquee:after {
+    right: 0;
+    background: linear-gradient(to left, #070111 0%, transparent 100%);
+}
+
+.marquee-content {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    list-style: none;
+    animation: scrolling 25s linear infinite;
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translateX(0vw);
+    }
+    100% {
+        transform: translateX(-100vw);
+    }
+}
+
+.marquee-content li {
+    display: flex;
     justify-content: center;
     align-items: center;
-    width:50vw;
-    font-size:6.0rem;
-    flex-shrink:0;
-    white-space:no-wrap;
+    width: 50vw;
+    font-size: 6.0rem;
+    flex-shrink: 0;
+    white-space: no-wrap;
 }
-.movie-times-main{
-    display:grid;
+
+.movie-times-main {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 20px;
-    padding-top:10%;
+    padding-top: 10%;
 }
-img{
-    width:250px;
+
+img {
+    width: 250px;
     border-radius: 5px;
 }
-.main-movie{
-    display:flex;
-    padding:0 5%;
+
+.main-movie {
+    display: flex;
+    padding: 0 5%;
     justify-content: space-between;
 }
-h4{
-    font-size:2.5rem;
-    font-weight:bold;
+
+h4 {
+    font-size: 2.5rem;
+    font-weight: bold;
 }
-.time{
-    color:#D72508;
+
+.time {
+    color: #D72508;
 }
-.main-movie a{
+
+.main-movie a {
     background-color: #D72508;
-    color:white;
-    padding:2% 3%;
+    color: white;
+    padding: 2% 3%;
     text-decoration: none;
-    border-radius:2px;
+    border-radius: 2px;
 }
-.main-movie a:hover{
-    color:white;
+
+.main-movie a:hover {
+    color: white;
     transform: scale(1, 1.03);
     background-color: #3d1b74;
     color: #A7B3B1;
     transition: 2s;
     transition-delay: 0.0001s;
 }
-.days{
-    font-weight:600;
+
+.days {
+    font-weight: 600;
 }
-.fa-star{
-    color:red;
-    filter:red;
+
+.fa-star {
+    color: red;
+    filter: red;
 }
-.fa-star-half-stroke{
-    color:red;
+
+.fa-star-half-stroke {
+    color: red;
 }
-.main-movie-2{
-    display:grid;
+
+.main-movie-2 {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 20px;
 }
+
+
 /*========================================FOOTER==========================================*/
 
 .footer {
@@ -251,42 +280,44 @@ h4{
 .footer a:hover {
     transform: scale(1, 1.05);
     transition-delay: 0.0001s;
-    color:red;
+    color: red;
 }
 
 
 /*=================================MEDIA QUERIES---------------------------------------------*/
-@media (max-width:280px){
-    .navigation a{
-        font-size:1.2rem;
+
+@media (max-width:280px) {
+    .navigation a {
+        font-size: 1.2rem;
     }
-    .movie-times-main{
+    .movie-times-main {
         grid-template-columns: 1fr;
     }
-    .movie-info{
-       margin-left:5%;
+    .movie-info {
+        margin-left: 5%;
     }
-    .marquee-content li{
-        font-size:2.0rem;
+    .marquee-content li {
+        font-size: 2.0rem;
     }
-    .marquee:before, .marquee:after{
-        top:200px;
-        position:relative;
+    .marquee:before,
+    .marquee:after {
+        top: 200px;
+        position: relative;
     }
-    img{
-        width:150px;
+    img {
+        width: 150px;
     }
-    h4{
-        font-size:2.0rem;
-        margin-top:2%;
+    h4 {
+        font-size: 2.0rem;
+        margin-top: 2%;
     }
     .main-movie p {
-        font-size:1.2rem;
+        font-size: 1.2rem;
     }
-    .main-movie a{
-        font-size:1.2rem;
+    .main-movie a {
+        font-size: 1.2rem;
     }
-    .main-movie{
+    .main-movie {
         flex-direction: column;
     }
     .footer-one {
@@ -296,48 +327,56 @@ h4{
         margin-bottom: 2%;
         line-height: 2;
         text-align: center;
-        font-size:1.4rem;
+        font-size: 1.4rem;
     }
     .footer-links {
         display: flex;
         flex-direction: column;
         margin-bottom: 2%;
         padding-left: 0%;
-        font-size:1.4rem;
+        font-size: 1.4rem;
     }
-    .copy-wright{
-        font-size:1.4rem;
+    .copy-wright {
+        font-size: 1.4rem;
     }
 }
-@media only screen and (max-width: 480px) and (min-width: 320px){
-    .navigation a{
-        font-size:1.2rem;
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    .navigation a {
+        font-size: 1.2rem;
     }
-    .movie-times-main{
+    .navigation button .navbar-toggler-icon {
+        font-size: 1.05em;
+    }
+    .navbar-nav a {
+        margin-left: 45%;
+    }
+    .movie-times-main {
         grid-template-columns: 1fr;
     }
-    .movie-info{
-       margin-left:5%;
+    .movie-info {
+        margin-left: 5%;
     }
-    .marquee-content li{
-        font-size:2.0rem;
+    .marquee-content li {
+        font-size: 2.0rem;
     }
-    .marquee:before, .marquee:after{
-        top:200px;
-        position:relative;
+    .marquee:before,
+    .marquee:after {
+        top: 200px;
+        position: relative;
     }
-    img{
-        width:150px;
+    img {
+        width: 150px;
     }
-    h4{
-        font-size:2.0rem;
-        margin-top:2%;
+    h4 {
+        font-size: 2.0rem;
+        margin-top: 2%;
     }
     .main-movie p {
-        font-size:1.2rem;
+        font-size: 1.2rem;
     }
-    .main-movie a{
-        font-size:1.2rem;
+    .main-movie a {
+        font-size: 1.2rem;
     }
     .footer-one {
         display: flex;
@@ -346,49 +385,59 @@ h4{
         margin-bottom: 2%;
         line-height: 2;
         text-align: center;
-        font-size:1.4rem;
+        font-size: 1.4rem;
     }
     .footer-links {
         display: flex;
         flex-direction: column;
         margin-bottom: 2%;
         padding-left: 0%;
-        font-size:1.4rem;
+        font-size: 1.4rem;
     }
-    .copy-wright{
-        font-size:1.4rem;
+    .copy-wright {
+        font-size: 1.4rem;
     }
 }
+
+
 /*====================DESKTOP SIZES============================*/
-@media only screen and (max-width: 768px) and (min-width: 481px){
-    .navigation a{
-        font-size:1.2rem;
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+    .navigation a {
+        font-size: 1.2rem;
     }
-    .movie-times-main{
+    .navigation button .navbar-toggler-icon {
+        font-size: 1.05em;
+    }
+    .navbar-nav a {
+        margin-left: 45%;
+    }
+    .movie-times-main {
         grid-template-columns: 1fr 1fr;
     }
-    .movie-info{
-      margin-left:5%;
+    .movie-info {
+        margin-left: 5%;
     }
-    .marquee-content li{
-        font-size:2.5rem;
+    .marquee-content li {
+        font-size: 2.5rem;
     }
-    .marquee:before, .marquee:after{
-        top:200px;
-        position:relative;
+    .marquee:before,
+    .marquee:after {
+        top: 200px;
+        position: relative;
     }
-    img{
-        width:150px;
+    img {
+        width: 150px;
     }
-    h4{
-        font-size:2.0rem;
-        margin-top:2%;
+    h4 {
+        font-size: 2.0rem;
+        margin-top: 2%;
     }
     .main-movie p {
-        font-size:1.2rem;
+        font-size: 1.2rem;
     }
-    .main-movie a{
-        font-size:1.2rem;
+    .main-movie a {
+        font-size: 1.2rem;
     }
     .footer-one {
         display: flex;
@@ -397,49 +446,59 @@ h4{
         margin-bottom: 2%;
         line-height: 2;
         text-align: center;
-        font-size:1.4rem;
+        font-size: 1.4rem;
     }
     .footer-links {
         display: flex;
         flex-direction: column;
         margin-bottom: 2%;
         padding-left: 0%;
-        font-size:1.4rem;
+        font-size: 1.4rem;
     }
-    .copy-wright{
-        font-size:1.4rem;
+    .copy-wright {
+        font-size: 1.4rem;
     }
 }
+
+
 /*======================================LARGER SCREEN SIZES===========================================*/
-@media only screen and (max-width: 1024px) and (min-width: 769px){
-    .navigation a{
-        font-size:1.5rem;
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    .navigation a {
+        font-size: 1.5rem;
     }
-    .movie-times-main{
+    .navigation button .navbar-toggler-icon {
+        font-size: 1.05em;
+    }
+    .navbar-nav a {
+        margin-left: 45%;
+    }
+    .movie-times-main {
         grid-template-columns: 1fr 1fr;
     }
-    .movie-info{
-      margin-left:5%;
+    .movie-info {
+        margin-left: 5%;
     }
-    .marquee-content li{
-        font-size:3.0rem;
+    .marquee-content li {
+        font-size: 3.0rem;
     }
-    .marquee:before, .marquee:after{
-        top:200px;
-        position:relative;
+    .marquee:before,
+    .marquee:after {
+        top: 200px;
+        position: relative;
     }
-    img{
-        width:200px;
+    img {
+        width: 200px;
     }
-    h4{
-        font-size:2.5rem;
-        margin-top:2%;
+    h4 {
+        font-size: 2.5rem;
+        margin-top: 2%;
     }
     .main-movie p {
-        font-size:1.3rem;
+        font-size: 1.3rem;
     }
-    .main-movie a{
-        font-size:1.6rem;
+    .main-movie a {
+        font-size: 1.6rem;
     }
     .footer-one {
         display: flex;
@@ -447,15 +506,15 @@ h4{
         margin-bottom: 2%;
         line-height: 2;
         text-align: center;
-        font-size:1.4rem;
+        font-size: 1.4rem;
     }
     .footer-links {
         display: flex;
         margin-bottom: 2%;
         padding-left: 0%;
-        font-size:1.4rem;
+        font-size: 1.4rem;
     }
-    .copy-wright{
-        font-size:1.4rem;
+    .copy-wright {
+        font-size: 1.4rem;
     }
 }
