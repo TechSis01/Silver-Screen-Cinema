@@ -19,16 +19,16 @@
         <nav class="nav">
             <div class="brand-name">SILVER<span class="brand-screen">SCREEN</span></div>
             <a href="#" class="link">Home</a>
-            <div><a href="./schedule.html" class="link">Schedule</a></div>
             <div><a href="cast.html" class="link">Cast</a></div>
-            <a class="link" href="about.html">About</a>
+            <div><a href="./schedule.html" class="link">Schedule</a></div>
+            <a class="link" href="./about.html">About</a>
             </div>
         </nav>
 
         <video src="./trailer2.mp4" id="myVideo" autoplay="autoplay" loop></video>
     </header>
-    <button onclick="playVid()">Play</button>
-    <button onclick="pauseVid()">Pause</button>
+    <button onclick="playVid()" class="play-btn"><i class="fa-solid fa-play"></i></button>
+    <button onclick="pauseVid()" class="pause-btn"><i class="fa-solid fa-pause"></i></button>
 
     <main>
         <!---------------------CURRENT MOVIES SECTION---------------------------------------->
@@ -46,7 +46,7 @@
                 <div>
                     <img src="./movies/juneee.JPG" alt="dune" class="movie">
                     <div>
-                        <p>June</p>
+                        <p>Dune</p>
                         <p>2h 35m || Sci-fi/Adventure </p>
                     </div>
                 </div>
