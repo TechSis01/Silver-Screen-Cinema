@@ -206,8 +206,8 @@ progress[value]::-webkit-progress-value {
 }
 
 .news-box {
-   display:grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-top: 5%;
 }
 
@@ -291,7 +291,10 @@ progress[value]::-webkit-progress-value {
     position: fixed;
     z-index: 100;
 }
+
+
 /*======================================MEDIA QUERIES==================================*/
+
 @media (max-width:280px) {
     .brand-name {
         font-size: 1.2rem;
@@ -325,14 +328,14 @@ progress[value]::-webkit-progress-value {
         line-height: 1;
     }
     .news-box {
-       grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
         padding: 0 5%;
     }
     .news-info {
         width: 250px;
     }
-    .main-news{
-        display:flex;
+    .main-news {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -416,19 +419,19 @@ progress[value]::-webkit-progress-value {
     .news-info {
         width: 280px;
         margin: 2% 0;
-        border-radius: 5px;;
+        border-radius: 5px;
+        ;
     }
-    .main-news{
-        display:flex;
+    .main-news {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .main-news p{
-        font-size:1.8rem;
-        width:70%;
-        margin:2% auto;
-       
+    .main-news p {
+        font-size: 1.8rem;
+        width: 70%;
+        margin: 2% auto;
     }
     .zendaya {
         padding-left: 5%;
@@ -493,7 +496,7 @@ progress[value]::-webkit-progress-value {
         font-size: 2.0rem;
     }
     .movies-coming-soon p {
-        font-size:2rem;
+        font-size: 2rem;
         line-height: 1;
     }
     .news-box {
@@ -502,16 +505,16 @@ progress[value]::-webkit-progress-value {
     .news-info {
         width: 280px;
     }
-    .main-news{
+    .main-news {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
-    .main-news p{
-        width:70%;
-        margin:2% auto;
-        font-size:1.5rem;
+    .main-news p {
+        width: 70%;
+        margin: 2% auto;
+        font-size: 1.5rem;
     }
     .zendaya {
         padding-left: 5%;
@@ -578,20 +581,20 @@ progress[value]::-webkit-progress-value {
         line-height: 1;
     }
     .news-box {
-       grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
     .news-info {
         width: 280px;
     }
-    .main-news{
+    .main-news {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .main-news p{
-        width:70%;
-        margin:0 auto;
+    .main-news p {
+        width: 70%;
+        margin: 0 auto;
     }
     .zendaya {
         padding-left: 5%;
