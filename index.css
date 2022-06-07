@@ -291,7 +291,7 @@ progress[value]::-webkit-progress-value {
     position: fixed;
     z-index: 100;
 }
-
+/*======================================MEDIA QUERIES==================================*/
 @media (max-width:280px) {
     .brand-name {
         font-size: 1.2rem;
@@ -392,22 +392,22 @@ progress[value]::-webkit-progress-value {
     }
     .current-movies-grid {
         padding: 0% 0% 5%;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         grid-column-gap: 5px;
         text-align: center;
     }
     .current-movies p {
-        font-size: 1.1rem;
+        font-size: 2rem;
     }
     .movie {
-        width: 150px;
+        width: 70%;
         margin: 2% 0;
     }
     .movies-coming-soon h3 {
         font-size: 2.0rem;
     }
     .movies-coming-soon p {
-        font-size: 1.1rem;
+        font-size: 2rem;
         line-height: 1;
     }
     .news-box {
@@ -425,6 +425,7 @@ progress[value]::-webkit-progress-value {
         align-items: center;
     }
     .main-news p{
+        font-size:1.8rem;
         width:70%;
         margin:2% auto;
        
@@ -463,9 +464,6 @@ progress[value]::-webkit-progress-value {
     }
 }
 
-
-/*=========================DESKTOP SIZES========================================*/
-
 @media only screen and (max-width: 768px) and (min-width: 481px) {
     .brand-name {
         font-size: 1.6rem;
@@ -481,21 +479,21 @@ progress[value]::-webkit-progress-value {
     }
     .current-movies-grid {
         padding: 0% 0% 5%;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr 1fr;
         grid-column-gap: 5px;
         text-align: center;
     }
     .current-movies p {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
     .movie {
-        width: 150px;
+        width: 70%;
     }
     .movies-coming-soon h3 {
         font-size: 2.0rem;
     }
     .movies-coming-soon p {
-        font-size: 1.4rem;
+        font-size:2rem;
         line-height: 1;
     }
     .news-box {
@@ -512,7 +510,8 @@ progress[value]::-webkit-progress-value {
     }
     .main-news p{
         width:70%;
-        margin:0 auto;
+        margin:2% auto;
+        font-size:1.5rem;
     }
     .zendaya {
         padding-left: 5%;
@@ -545,9 +544,6 @@ progress[value]::-webkit-progress-value {
         left: 80px;
     }
 }
-
-
-/*==========================================LARGER SCREEN SIZES================================*/
 
 @media only screen and (max-width: 1024px) and (min-width: 769px) {
     .brand-name {

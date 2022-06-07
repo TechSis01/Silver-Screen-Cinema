@@ -305,11 +305,8 @@ h4 {
         top: 200px;
         position: relative;
     }
-    <<<<<<< HEAD img {
-        width: 150px;
-        =======img {
+     img {
             width: 70%;
-            >>>>>>>e92bd8f69e02556ea0f6c280ed33280fd54fe178
         }
         h4 {
             font-size: 2.0rem;
@@ -368,12 +365,9 @@ h4 {
             top: 200px;
             position: relative;
         }
-        <<<<<<< HEAD img {
-            width: 150px;
-            =======img {
+        img {
                 width: 50%;
                 height: auto;
-                >>>>>>>e92bd8f69e02556ea0f6c280ed33280fd54fe178
             }
             h4 {
                 font-size: 2.0rem;

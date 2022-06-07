@@ -241,7 +241,7 @@ form {
 .modal-content {
     width: 60%;
     margin: 2% auto;
-    padding: 2% 4%;
+    padding: 2% 5%;
     box-shadow: 0 10px 10px 9px rgb(38, 36, 36);
 }
 
@@ -382,7 +382,7 @@ form {
     .modal-content {
         width: 80%;
         margin: 70% auto;
-        padding: 2% 7%;
+        padding: 2% 9%;
     }
     .x {
         width: 14%;
