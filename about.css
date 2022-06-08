@@ -99,7 +99,6 @@
  .footer {
      font-family: 'Russo One', sans-serif;
      margin: 5% 0% 0% 5%;
-     border: 1px solid yellow
  }
  
  .footer span {
@@ -187,7 +186,6 @@
      .copy-wright p {
          padding: 0%;
          margin: 0%;
-         border: 1px solid yellow;
      }
  }
  
