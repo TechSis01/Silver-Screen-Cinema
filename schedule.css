@@ -51,7 +51,7 @@ body {
 }*/
 
 .navigation button .navbar-toggler-icon {
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .navigation {
@@ -339,7 +339,7 @@ h4 {
         font-size: 1.2rem;
     }
     .navigation button .navbar-toggler-icon {
-        font-size: 1.07em;
+        font-size: 1.05em;
     }
     .navbar-nav a {
         margin-left: 45%;
