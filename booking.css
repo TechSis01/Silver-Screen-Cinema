@@ -12,8 +12,11 @@ body {
 
 /*=====================================NAVIGATION====================================*/
 
-.navigation button .navbar-toggler-icon {
+/*.navigation button .navbar-toggler-icon {
     font-size: 1.2em;
+}*/
+.navbar-toggler{
+    font-size: 1em;
 }
 
 .navigation {
