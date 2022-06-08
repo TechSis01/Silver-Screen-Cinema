@@ -1,281 +1,296 @@
-  /*==========================================================UNIVERSAL SELECTOR==============================================*/
-  
-  * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-  }
-  
-  .body {
-      font-family: 'Noto Sans', sans-serif;
-      background-color: #070111;
-  }
-  /*==========================================================NAVIGATION=====================================================*/
-  
-  .navigation button .navbar-toggler-icon {
-      font-size: 1.2em;
-  }
-  
-  .navigation {
-      display: flex;
-      padding-top: 2%;
-      font-family: 'Russo One', sans-serif;
-      align-items: center;
-      color: #A7B3B1;
-  }
-  
-  .navigation span {
-      font-size: 1.5rem;
-      color: #e70404;
-      margin-left: 40%;
-  }
-  
-  .brand-name {
-      font-family: 'Russo One', sans-serif;
-  }
-  
-  .navigation a {
-      color: #A7B3B1;
-      font-size: 1.07em;
-      text-decoration: none;
-  }
-  
-  .navbar-nav {
-      display: flex;
-  }
-  
-  .navbar-nav a {
-      gap: 8em;
-      margin-left: 85%;
-  }
-  
-  .navigation a:hover {
-      transform: scale(1, 1.05);
-      transition-delay: 0.0001s;
-      color: #e70404;
-  }
-  /*==========================================================TEXT=============================================================*/
-  
-  .cinema {
-      display: flex;
-      align-items: center;
-      margin: 5%;
-  }
-  
-  .cinema h1 {
-      color: #A7B3B1;
-      font-size: 3em;
-      padding-left: 10%;
-  }
-  
-  .cinemas-img {
-      height: 500px;
-  }
-  
-  .text {
-      color: #A7B3B1;
-      font-size: 18px;
-      text-align: justify;
-      margin: 5% 3% 2% 5%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      word-spacing: 2px;
-  }
-  
-  p {
-      font-size: 1em;
-      line-height: 3;
-  }
-  
-  img {
-      width: 100%;
-      object-fit: cover;
-      border-radius: 20px;
-      /* height: 2500px; */
-  }
-  /*==========================================================FOOTER=============================================================*/
-  
-  .footer {
-      font-family: 'Russo One', sans-serif;
-      margin: 5% 0% 0% 5%;
-  }
-  
-  .footer span {
-      color: #e70404;
-      font-size: 1.8rem;
-  }
-  
-  .footer-one {
-      display: flex;
-      justify-content: space-between;
-      color: #A7B3B1;
-      padding: 5% 3% 5% 0%;
-      align-items: center;
-  }
-  
-  .footer-links {
-      display: flex;
-      justify-content: space-around;
-      width: 50%;
-      padding-left: 15%;
-      font-size: 1.4em;
-  }
-  
-  .footer a {
-      text-decoration: none;
-      color: #A7B3B1;
-  }
-  
-  .footer-social {
-      width: 25%;
-      color: white;
-  }
-  
-  .copy-wright {
-      text-align: center;
-      font-size: 1.2em;
-      color: #A7B3B1;
-  }
-  
-  .footer-social {
-      display: flex;
-      justify-content: space-around;
-      font-size: 1.6em;
-  }
-  
-  .footer a:hover {
-      transform: scale(1, 1.05);
-      transition-delay: 0.0001s;
-  }
-  /*==========================================================MEDIA QUERIES FOR SMALLLER SCREENS =============================================================*/
-  
-  @media only screen and (max-width: 480px) and (min-width: 320px) {
-      html,
-      body {
-          width: 100%;
-          margin: 0;
-          padding: 0;
-          overflow-x: hidden;
-      }
-      .navigation button .navbar-toggler-icon {
-          font-size: 1.05em;
-      }
-      .navbar-nav a {
-          margin-left: 45%;
-      }
-      .footer-one {
-          display: flex;
-          flex-direction: column;
-          padding: 10px;
-          margin-bottom: 2%;
-          line-height: 2;
-          text-align: center;
-      }
-      .footer-links {
-          display: flex;
-          flex-direction: column;
-          margin-bottom: 2%;
-          padding-left: 0%;
-      }
-  }
-  
-  @media only screen and (max-width: 768px) and (min-width: 481px) {
-      html,
-      body {
-          width: 100%;
-          margin: 0;
-          padding: 0;
-          overflow-x: hidden;
-      }
-      .navigation button .navbar-toggler-icon {
-          font-size: 2.2em;
-      }
-      .navbar-nav a {
-          margin-left: 45%;
-      }
-      .navigation a {
-          font-size: 1.7em;
-      }
-      .navigation span {
-          font-size: 3.8rem;
-          color: #e70404;
-      }
-      p {
-          font-size: 2.1em;
-      }
-      .footer {
-          font-size: 2em;
-      }
-      .footer-one {
-          display: flex;
-          flex-direction: column;
-          padding: 10px;
-          margin-bottom: 2%;
-          line-height: 2;
-          text-align: center;
-      }
-      .footer-links {
-          display: flex;
-          flex-direction: column;
-          margin-bottom: 2%;
-          padding-left: 0%;
-          font-size: 1.3em;
-      }
-      .footer-one span {
-          font-size: 1.1em;
-      }
-      .footer-one .navbar-brand {
-          font-size: 1.2em;
-      }
-  }
-  
-  @media only screen and (max-width: 1024px) and (min-width: 769px) {
-      html,
-      body {
-          width: 100%;
-          margin: 0;
-          padding: 0;
-          overflow-x: hidden;
-      }
-      .navigation span {
-          font-size: 3rem;
-          color: #e70404;
-      }
-      .navigation .navbar-brand {
-          font-size: 1.8rem;
-          color: #A7B3B1;
-      }
-      .navbar-nav a {
-          width: 1.4em;
-          font-size: 1.7em;
-          gap: 0em;
-      }
-      p {
-          font-size: 2em;
-      }
-      .footer {
-          font-size: 2.1em;
-      }
-      .footer-one {
-          display: flex;
-          flex-direction: column;
-          padding: 10px;
-          margin-bottom: 2%;
-          line-height: 2;
-          text-align: center;
-      }
-      .footer-links {
-          display: flex;
-          flex-direction: column;
-          margin-bottom: 2%;
-          padding-left: 0%;
-          font-size: 1.3em;
-      }
-      .footer-one span {
-          font-size: 1.6em;
-      }
-      .footer-one .navbar-brand {
-          font-size: 1.6em;
-      }
-  }
+ /*==========================================================UNIVERSAL SELECTOR==============================================*/
+ 
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ 
+ .body {
+     font-family: 'Noto Sans', sans-serif;
+     background-color: #070111;
+ }
+ /*==========================================================NAVIGATION=====================================================*/
+ 
+ .navigation button .navbar-toggler-icon {
+     font-size: 1.2em;
+ }
+ 
+ .navigation {
+     display: flex;
+     padding-top: 2%;
+     font-family: 'Russo One', sans-serif;
+     align-items: center;
+     color: #A7B3B1;
+ }
+ 
+ .navigation span {
+     font-size: 1.5rem;
+     color: #e70404;
+     margin-left: 40%;
+ }
+ 
+ .brand-name {
+     font-family: 'Russo One', sans-serif;
+ }
+ 
+ .navigation a {
+     color: #A7B3B1;
+     font-size: 1.07em;
+     text-decoration: none;
+ }
+ 
+ .navbar-nav {
+     display: flex;
+ }
+ 
+ .navbar-nav a {
+     gap: 8em;
+     margin-left: 85%;
+ }
+ 
+ .navigation a:hover {
+     transform: scale(1, 1.05);
+     transition-delay: 0.0001s;
+     color: #e70404;
+ }
+ /*==========================================================TEXT=============================================================*/
+ 
+ .cinema {
+     display: flex;
+     align-items: center;
+     margin: 5%;
+ }
+ 
+ .cinema h1 {
+     color: #A7B3B1;
+     font-size: 3em;
+     padding-left: 10%;
+ }
+ 
+ .cinemas-img {
+     height: 500px;
+ }
+ 
+ .text {
+     color: #A7B3B1;
+     font-size: 18px;
+     text-align: justify;
+     margin: 5% 3% 2% 5%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     word-spacing: 2px;
+ }
+ 
+ p {
+     font-size: 1em;
+     line-height: 3;
+ }
+ 
+ img {
+     width: 100%;
+     object-fit: cover;
+     border-radius: 20px;
+     /* height: 2500px; */
+ }
+ /*==========================================================FOOTER=============================================================*/
+ 
+ .footer {
+     font-family: 'Russo One', sans-serif;
+     margin: 5% 0% 0% 5%;
+ }
+ 
+ .footer span {
+     color: #e70404;
+     font-size: 1.8rem;
+ }
+ 
+ .footer-one {
+     display: flex;
+     justify-content: space-between;
+     color: #A7B3B1;
+     padding: 5% 3% 5% 0%;
+     align-items: center;
+ }
+ 
+ .footer-links {
+     display: flex;
+     justify-content: space-around;
+     width: 50%;
+     padding-left: 15%;
+     font-size: 1.4em;
+ }
+ 
+ .footer a {
+     text-decoration: none;
+     color: #A7B3B1;
+ }
+ 
+ .footer-social {
+     width: 25%;
+     color: white;
+ }
+ 
+ .copy-wright {
+     text-align: center;
+     font-size: 1.2em;
+     color: #A7B3B1;
+ }
+ 
+ .footer-social {
+     display: flex;
+     justify-content: space-around;
+     font-size: 1.6em;
+ }
+ 
+ .footer a:hover {
+     transform: scale(1, 1.05);
+     transition-delay: 0.0001s;
+ }
+ /*==========================================================MEDIA QUERIES FOR SMALLLER SCREENS =============================================================*/
+ 
+ @media only screen and (max-width: 480px) and (min-width: 320px) {
+     html,
+     body {
+         width: 100%;
+         margin: 0;
+         padding: 0;
+         overflow-x: hidden;
+     }
+     .navigation span {
+         font-size: 1.5rem;
+         color: #e70404;
+         margin-left: 5%;
+     }
+     .navigation button .navbar-toggler-icon {
+         font-size: 1.05em;
+     }
+     .navbar-nav a {
+         margin-left: 42%;
+     }
+     .footer-one {
+         display: flex;
+         flex-direction: column;
+         padding: 10px;
+         margin-bottom: 2%;
+         line-height: 2;
+         text-align: center;
+     }
+     .footer-links {
+         display: flex;
+         flex-direction: column;
+         margin-bottom: 2%;
+         padding-left: 0%;
+     }
+     .copy-wright p {
+         padding: 0%;
+         margin: 0%;
+     }
+ }
+ 
+ @media only screen and (max-width: 768px) and (min-width: 481px) {
+     html,
+     body {
+         width: 100%;
+         margin: 0;
+         padding: 0;
+         overflow-x: hidden;
+     }
+     .navigation span {
+         font-size: 1.5rem;
+         color: #e70404;
+         margin-left: 5%;
+     }
+     .navigation button .navbar-toggler-icon {
+         font-size: 2.2em;
+     }
+     .navbar-nav a {
+         margin-left: 45%;
+     }
+     .navigation a {
+         font-size: 1.7em;
+     }
+     .navigation span {
+         font-size: 3.8rem;
+         color: #e70404;
+     }
+     p {
+         font-size: 2.1em;
+     }
+     .footer {
+         font-size: 2em;
+     }
+     .footer-one {
+         display: flex;
+         flex-direction: column;
+         padding: 10px;
+         margin-bottom: 2%;
+         line-height: 2;
+         text-align: center;
+     }
+     .footer-links {
+         display: flex;
+         flex-direction: column;
+         margin-bottom: 2%;
+         padding-left: 0%;
+         font-size: 1.3em;
+     }
+     .footer-one span {
+         font-size: 1.1em;
+     }
+     .footer-one .navbar-brand {
+         font-size: 1.2em;
+     }
+ }
+ 
+ @media only screen and (max-width: 1024px) and (min-width: 769px) {
+     html,
+     body {
+         width: 100%;
+         margin: 0;
+         padding: 0;
+         overflow-x: hidden;
+     }
+     .navigation span {
+         font-size: 3rem;
+         color: #e70404;
+         margin-left: 0%;
+     }
+     .navigation .navbar-brand {
+         font-size: 1.8rem;
+         color: #A7B3B1;
+     }
+     .navbar-nav a {
+         width: 1.4em;
+         font-size: 1.7em;
+         gap: 0em;
+     }
+     p {
+         font-size: 2em;
+     }
+     .footer {
+         font-size: 2.1em;
+     }
+     .footer-one {
+         display: flex;
+         flex-direction: column;
+         padding: 10px;
+         margin-bottom: 2%;
+         line-height: 2;
+         text-align: center;
+     }
+     .footer-links {
+         display: flex;
+         flex-direction: column;
+         margin-bottom: 2%;
+         padding-left: 0%;
+         font-size: 1.3em;
+     }
+     .footer-one span {
+         font-size: 1.6em;
+     }
+     .footer-one .navbar-brand {
+         font-size: 1.6em;
+     }
+ }
