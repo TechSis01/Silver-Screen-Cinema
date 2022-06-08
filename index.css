@@ -431,7 +431,7 @@ video {
          top:30%;
          flex-direction: column;
          align-items: end;
-         transform:translateY(-130%);
+         transform:translateY(-135%);
          transition:transform 0.5s ease-in;
          width:20%;
      }
