@@ -45,7 +45,7 @@ body {
 
 .navbar-nav a {
     gap: 6em;
-    margin-left: 50%;
+    margin-left: 75%;
 }
 
 .navigation a:hover {
@@ -148,7 +148,7 @@ body {
 }
 
 em {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
 }
 
 
@@ -169,7 +169,7 @@ em {
     outline: none;
     margin-right: 2%;
     border-radius: 5px;
-    font-size: 1.5rem;
+    font-size: 2.2rem;
 }
 
 #book-ticket-btn {
@@ -302,7 +302,7 @@ form {
 
 .footer span {
     color: #D72508;
-    font-size: 1.8rem;
+    font-size: 3rem;
 }
 
 .footer-one {
@@ -346,6 +346,10 @@ form {
     transform: scale(1, 1.05);
     transition-delay: 0.0001s;
     color: red;
+}
+
+.navbar-brand {
+    font-size: 2rem;
 }
 
 
