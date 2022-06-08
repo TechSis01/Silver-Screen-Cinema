@@ -1,480 +1,528 @@
-<!DOCTYPE html>
-<html lang="en">
+html {
+    font-size: 62.5%;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-----------BOOTSTRAP LINK---------------------------------------------------->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!--FONT AWESOME LINK ------------------------------------------------------------------>
-    <script src="https://kit.fontawesome.com/597098b101.js" crossorigin="anonymous"></script>
-    <!--------GOOGLE FONTS LINK------------------------------------------------------------>
-    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script:wght@600&family=Noto+Sans:wght@300&family=Open+Sans:wght@400;500&family=Russo+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./booking.css">
-    <title>Book a Ticket</title>
-</head>
-
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid navigation">
-                <a class=" navbar-brand brand-name" href="#footer"><span>Silver</span>Screen</a>
-                </span>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                        <a class="nav-link" href="cast.html ">Cast</a>
-                        <a class="nav-link" href="schedule.html ">Schedule</a>
-                        <a class="nav-link" href="about.html">About</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <!----------------------SILVERSCREEN ANIMATION------------------------------------------>
-        <!-- <div class="marquee">
-            <ul class="marquee-content">
-                <li>SILVERSCREEN</li>
-                <li>SILVERSCREEN</li>
-                <li>SILVERSCREEN</li>
-                <li>SILVERSCREEN</li>
-    
-                <li >SILVERSCREEN</li>
-                <li >SILVERSCREEN</li>
-                <li >SILVERSCREEN</li>
-                <li >SILVERSCREEN</li>
-            </ul>
-        </div> -->
-        <!--------------------------BOOKING TICKET FORM-------------------------------------->
-        <section class="book-ticket">
-            <div class="bookings">
-                <h1>BOOK A TICKET</h1>
-                <em>Movies Showing from 3rd June to 9th June at SilverScreen Cinemas</em>
-                <p>Available seats : 200</p>
-                <p>Price: &#x20A6;2000</p>
-                <label for="qty">Ticket quantity:</label>
-                <input type="text" id="qty" placeholder="0">
-                <p>Total :</p>
-                <p id="total"></p>
-                <!--------------DIFFERENT MOVIE TIMES------------------------------------------------------->
-                <div class="choose-time">
-                    <div><button class="choose-time-btn">Monday</button>10:30am</div>
-                    <div><button class="choose-time-btn">Monday</button>2:00pm</div>
-                    <div><button class="choose-time-btn">Monday</button>4:30pm</div>
-                    <div><button class="choose-time-btn">Tueday</button>10:30am</div>
-                    <div><button class="choose-time-btn">Tueday</button>2:00apm</div>
-                    <div><button class="choose-time-btn">Tueday</button>4:30pm</div>
-                    <div><button class="choose-time-btn">Wednesday</button>10:30am</div>
-                    <div><button class="choose-time-btn">Wednesday</button>2:00pm</div>
-                    <div><button class="choose-time-btn">Wednesday</button>4:30pm</div>
-                    <div><button class="choose-time-btn">Thursday</button>10:30am</div>
-                    <div><button class="choose-time-btn">Thursday</button>2:00pm</div>
-                    <div><button class="choose-time-btn">Thursday</button>4:30pm</div>
-                    <div><button class="choose-time-btn">Friday</button>2:00pm</div>
-                    <div><button class="choose-time-btn">Friday</button>5:00pm</div>
-                    <div><button class="choose-time-btn">Saturday</button>2:00pm</div>
-                    <div><button class="choose-time-btn">Saturday</button>5:00pm</div>
-                    <div><button class="choose-time-btn">Sunday</button>2:00pm</div>
-                    <div><button class="choose-time-btn">Sunday</button>5:00pm</div>
-                </div>
-                <button id="book-ticket-btn">Book a Ticket</button>
-            </div>
-        </section>
-
-        <!----------------------------FOOTER----------------------------------------->
-
-        <section class="footer" id="footer">
-            <section class="footer-one">
-                <a class=" navbar-brand" href="index.html"><span>Silver</span>Screen</a>
-                <div class=" footer-links">
-                    <div><a href=" # ">Home</a></div>
-                    <div><a href=" # ">Schedule</a></div>
-                    <div><a href=" # ">Cast</a></div>
-                    <div><a href=" # ">Booking</a></div>
-                </div>
-                <div class="footer-social">
-                    <a href=" https://www.linkedin.com/in/queendoline-akpan/ "><i class="fa-brands fa-linkedin "></i> <a
-                        href=" https://www.twitter.com/forJessica_sake "><i class=" fa-brands fa-twitter "></i></a>
-                    <a href="# "><i class="fa-brands fa-instagram "></i></a>
-                    <div>
-            </section>
-            <div class="copy-wright">
-                <p>Silverscreen@gmail.com</p>
-                <p><span></span>Siverscreen all rights reserved.</p>
-            </div>
-        </section>
-        <div class="modal-container" id="main-modal">
-            <div class="modal-content" id="main-modal-content">
-                <p class="x">&#10005;</p>
-                <form action="/pay">
-                    <div class="input-data">
-                        <label for="firstName">Name</label>
-                        <input type="text" id="firstName" class="name">
-                        <span id="nameError" class="error"></span>
-                    </div>
-                    <div class="input-data">
-                        <label for="email">Email Address</label>
-                        <input type="text" id="email">
-                        <span id="emailError" class="error"></span>
-                    </div>
-                    <div class="input-data">
-                        <label for="card" c>Card No.</label>
-                        <input type="text" id="card" required>
-                        <span class="card-error"></span>
-                    </div>
-                    <div class="input-data">
-                        <label for="cvv">Cvv</label>
-                        <input type="text" id="cvv" required>
-                        <span class="cvv-error" id="error"></span>
-                    </div>
-                    <div class="input-data">
-                        <label for="exp-date">Exp. Date</label>
-                        <input type="text" id="exp-date" required>
-                        <span class="exp-error"></span>
-                    </div>
-                    <div class="input-data">
-                        <label for="pin">Pin</label>
-                        <input type="password" id="pin" required>
-                        <span class="pin-error"></span>
-                    </div>
-                    <button type="submit" id="pay">Pay Here</button>
-                </form>
-            </div>
-        </div>
-    </main>
+body {
+    box-sizing: border-box;
+    background-color: #070111;
+    padding: 0;
+    margin: 0;
+    font-size: 1.6rem;
+    font-family: 'Noto Sans', sans-serif;
+}
 
 
+/*=====================================NAVIGATION====================================*/
 
 
-    <!----------------------------------------------------JAVASCRIPT BOOTSTRAP IMPORT---------------------------------------------------------->
-    <script src="./booking.js"></script>
+/*.navigation button .navbar-toggler-icon {
+    font-size: 1.2em;
+}
+.navigation {
+    display: flex;
+    padding-top: 2%;
+    font-family: 'Russo One', sans-serif;
+    align-items: center;
+    padding-left: 5%;
+}
+.navigation span {
+    font-size: 2.5rem;
+    color: #e70404;
+}
+.brand-name {
+    font-family: 'Russo One', sans-serif; 
+}
+.navigation a {
+    color: #A7B3B1;
+    font-size: 1.07em;
+    font-weight: bold;
+}
+.navigation a:hover span {
+    color: white;
+}
+.navbar-nav a {
+    gap: 8em;
+    margin-left: 60%;
+}
+.navigation a:hover {
+    transform: scale(1, 1.05);
+    transition-delay: 0.0001s;
+    color: #e70404;
+}*/
 
-    <script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin=" anonymous"></script>
+.navigation button .navbar-toggler-icon {
+    font-size: 1.2em;
+}
 
-    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-</body>
+.navigation {
+    display: flex;
+    padding-top: 2%;
+    font-family: 'Russo One', sans-serif;
+    align-items: center;
+    padding-left: 5%;
+}
 
-</html>
-  .days {
-      font-weight: 600;
-  }
-  
-  .fa-star {
-      color: red;
-      filter: red;
-  }
-  
-  .fa-star-half-stroke {
-      color: red;
-  }
-  
-  .main-movie-2 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-row-gap: 20px;
-  }
-  /*========================================FOOTER==========================================*/
-  
-  .footer {
-      font-family: 'Russo One', sans-serif;
-      margin-top: 5%;
-  }
-  
-  .footer span {
-      color: #D72508;
-      font-size: 1.8rem;
-  }
-  
-  .footer-one {
-      display: flex;
-      justify-content: space-between;
-      color: #A7B3B1;
-      padding: 5% 3% 5% 3%;
-      align-items: center;
-  }
-  
-  .footer-links {
-      display: flex;
-      justify-content: space-around;
-      width: 50%;
-      padding-left: 15%;
-      font-size: 1.4em;
-  }
-  
-  .footer a {
-      text-decoration: none;
-      color: #A7B3B1;
-  }
-  
-  .footer-social {
-      width: 25%;
-      color: white;
-  }
-  
-  .copy-wright {
-      text-align: center;
-      font-size: 1.2em;
-  }
-  
-  .footer-social {
-      display: flex;
-      justify-content: space-around;
-      font-size: 1.6em;
-  }
-  
-  .footer a:hover {
-      transform: scale(1, 1.05);
-      transition-delay: 0.0001s;
-      color: red;
-  }
-  /*=================================MEDIA QUERIES---------------------------------------------*/
-  
-  @media (max-width:280px) {
-      .navigation a {
-          font-size: 1.2rem;
-      }
-      .movie-times-main {
-          grid-template-columns: 1fr;
-      }
-      .movie-info {
-          margin-left: 5%;
-      }
-      .marquee-content li {
-          font-size: 2.0rem;
-      }
-      .marquee:before,
-      .marquee:after {
-          top: 200px;
-          position: relative;
-      }
-      img {
-          width: 70%;
-      }
-      h4 {
-          font-size: 2.0rem;
-          margin-top: 2%;
-      }
-      .main-movie p {
-          font-size: 1.2rem;
-      }
-      .main-movie a {
-          font-size: 1.2rem;
-      }
-      .main-movie {
-          flex-direction: column;
-      }
-      .footer-one {
-          display: flex;
-          flex-direction: column;
-          padding: 10px;
-          margin-bottom: 2%;
-          line-height: 2;
-          text-align: center;
-          font-size: 1.4rem;
-      }
-      .footer-links {
-          display: flex;
-          flex-direction: column;
-          margin-bottom: 2%;
-          padding-left: 0%;
-          font-size: 1.4rem;
-      }
-      .copy-wright {
-          font-size: 1.4rem;
-      }
-  }
-  
-  @media only screen and (max-width: 480px) and (min-width: 320px) {
-      .navigation a {
-          font-size: 1.2rem;
-      }
-      .navigation button .navbar-toggler-icon {
-          font-size: 1.05em;
-      }
-      .navbar-nav a {
-          margin-left: 45%;
-      }
-      .movie-times-main {
-          grid-template-columns: 1fr;
-      }
-      .movie-info {
-          margin-left: 5%;
-      }
-      .marquee-content li {
-          font-size: 2.0rem;
-      }
-      .marquee:before,
-      .marquee:after {
-          top: 200px;
-          position: relative;
-      }
-      img {
-          width: 90%;
-          max-height: 70%;
-          align-self: center;
-      }
-      h4 {
-          font-size: 2.0rem;
-          margin-top: 2%;
-      }
-      .main-movie {
-          flex-direction: column;
-      }
-      .main-movie p {
-          font-size: 1.2rem;
-      }
-      .main-movie a {
-          font-size: 1.2rem;
-      }
-      .footer-one {
-          display: flex;
-          flex-direction: column;
-          padding: 10px;
-          margin-bottom: 2%;
-          line-height: 2;
-          text-align: center;
-          font-size: 1.4rem;
-      }
-      .footer-links {
-          display: flex;
-          flex-direction: column;
-          margin-bottom: 2%;
-          padding-left: 0%;
-          font-size: 1.4rem;
-      }
-      .copy-wright {
-          font-size: 1.4rem;
-      }
-  }
-  /*====================DESKTOP SIZES============================*/
-  
-  @media only screen and (max-width: 768px) and (min-width: 481px) {
-      .navigation a {
-          font-size: 1.2rem;
-      }
-      .navigation button .navbar-toggler-icon {
-          font-size: 1.05em;
-      }
-      .navbar-nav a {
-          margin-left: 45%;
-      }
-      .movie-times-main {
-          grid-template-columns: repeat(1, 1fr);
-      }
-      .movie-info {
-          margin-left: 5%;
-      }
-      .marquee-content li {
-          font-size: 2.5rem;
-      }
-      .marquee:before,
-      .marquee:after {
-          top: 200px;
-          position: relative;
-      }
-      img {
-          width: 40rem;
-      }
-      h4 {
-          font-size: 2.5rem;
-          margin-top: 2%;
-      }
-      .main-movie p {
-          font-size: 2.2rem;
-      }
-      .main-movie a {
-          font-size: 1.2rem;
-      }
-      .footer span {
-          font-size: 2.2rem;
-      }
-      .footer-one {
-          display: flex;
-          flex-direction: column;
-          padding: 10px;
-          margin-bottom: 2%;
-          line-height: 2;
-          text-align: center;
-          font-size: 2.2rem;
-      }
-      .footer-links {
-          display: flex;
-          flex-direction: column;
-          margin-bottom: 2%;
-          padding-left: 0%;
-          font-size: 2.2rem;
-      }
-      .copy-wright {
-          font-size: 3rem;
-      }
-  }
-  /*======================================LARGER SCREEN SIZES===========================================*/
-  
-  @media only screen and (max-width: 1024px) and (min-width: 769px) {
-      .navigation a {
-          font-size: 1.5rem;
-      }
-      .navigation button .navbar-toggler-icon {
-          font-size: 1.05em;
-      }
-      .navbar-nav a {
-          margin-left: 45%;
-      }
-      .movie-times-main {
-          grid-template-columns: 1fr 1fr;
-      }
-      .movie-info {
-          margin-left: 5%;
-      }
-      .marquee-content li {
-          font-size: 3.0rem;
-      }
-      .marquee:before,
-      .marquee:after {
-          top: 200px;
-          position: relative;
-      }
-      img {
-          width: 28rem;
-      }
-      h4 {
-          font-size: 2.5rem;
-          margin-top: 2%;
-      }
-      .main-movie p {
-          font-size: 1.8rem;
-      }
-      .main-movie a {
-          font-size: 1.6rem;
-      }
-      .footer {
-          font-size: 1.5em;
-      }
-      .footer-one {
-          display: flex;
-          flex-direction: column;
-          padding: 10px;
-          margin-bottom: 2%;
-          line-height: 2;
-          text-align: center;
-      }
-      .footer-links {
-          display: flex;
-          flex-direction: column;
-          margin-bottom: 2%;
-          padding-left: 0%;
-          font-size: 1.3em;
-      }
-      .footer-one span {
-          font-size: 1.6em;
-      }
-      .footer-one .navbar-brand {
-          font-size: 1.6em;
-      }
-  }
+.navigation span {
+    font-size: 2.5rem;
+    color: #e70404;
+}
+
+.brand-name {
+    font-family: 'Russo One', sans-serif;
+}
+
+.navigation a {
+    color: #A7B3B1;
+    font-size: 1.07em;
+    font-weight: bold;
+}
+
+.navigation a:hover span {
+    color: white;
+}
+
+.navbar-nav a {
+    gap: 8em;
+    margin-left: 80%;
+}
+
+.navigation a:hover {
+    transform: scale(1, 1.05);
+    transition-delay: 0.0001s;
+    color: #e70404;
+}
+
+
+/*==========================================MOVIE TIMES=================================================*/
+
+.movie-times {
+    color: #A7B3B1;
+}
+
+.marquee {
+    width: 100%;
+    height: 10vw;
+    margin-top: 5%;
+    background-color: #070111;
+    color: #D72508;
+    overflow: hidden;
+    font-weight: bold;
+    font-family: 'Russo One', sans-serif;
+}
+
+.marquee:before,
+.marquee:after {
+    position: absolute;
+    top: 60px;
+    height: 50%;
+    width: 10rem;
+    content: "";
+    z-index: 1;
+}
+
+.marquee:before {
+    left: 0;
+    background: linear-gradient(to right, #070111 0%, transparent 100%)
+}
+
+.marquee:after {
+    right: 0;
+    background: linear-gradient(to left, #070111 0%, transparent 100%);
+}
+
+.marquee-content {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    list-style: none;
+    animation: scrolling 25s linear infinite;
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translateX(0vw);
+    }
+    100% {
+        transform: translateX(-100vw);
+    }
+}
+
+.marquee-content li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    font-size: 6.0rem;
+    flex-shrink: 0;
+    white-space: no-wrap;
+}
+
+.movie-times-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 20px;
+    padding-top: 10%;
+}
+
+img {
+    width: 250px;
+    border-radius: 5px;
+}
+
+.main-movie {
+    display: flex;
+    padding: 0 5%;
+    justify-content: space-between;
+}
+
+h4 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.time {
+    color: #D72508;
+}
+
+.main-movie a {
+    background-color: #D72508;
+    color: white;
+    padding: 2% 3%;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.main-movie a:hover {
+    color: white;
+    transform: scale(1, 1.03);
+    background-color: #3d1b74;
+    color: #A7B3B1;
+    transition: 2s;
+    transition-delay: 0.0001s;
+}
+
+.days {
+    font-weight: 600;
+}
+
+.fa-star {
+    color: red;
+    filter: red;
+}
+
+.fa-star-half-stroke {
+    color: red;
+}
+
+.main-movie-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 20px;
+}
+
+
+/*========================================FOOTER==========================================*/
+
+.footer {
+    font-family: 'Russo One', sans-serif;
+    margin-top: 5%;
+}
+
+.footer span {
+    color: #D72508;
+    font-size: 1.8rem;
+}
+
+.footer-one {
+    display: flex;
+    justify-content: space-between;
+    color: #A7B3B1;
+    padding: 5% 3% 5% 3%;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    padding-left: 15%;
+    font-size: 1.4em;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #A7B3B1;
+}
+
+.footer-social {
+    width: 25%;
+    color: white;
+}
+
+.copy-wright {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.6em;
+}
+
+.footer a:hover {
+    transform: scale(1, 1.05);
+    transition-delay: 0.0001s;
+    color: red;
+}
+
+
+/*=================================MEDIA QUERIES---------------------------------------------*/
+
+@media (max-width:280px) {
+    .navigation a {
+        font-size: 1.2rem;
+    }
+    .movie-times-main {
+        grid-template-columns: 1fr;
+    }
+    .movie-info {
+        margin-left: 5%;
+    }
+    .marquee-content li {
+        font-size: 2.0rem;
+    }
+    .marquee:before,
+    .marquee:after {
+        top: 200px;
+        position: relative;
+    }
+    img {
+        width: 70%;
+    }
+    h4 {
+        font-size: 2.0rem;
+        margin-top: 2%;
+    }
+    .main-movie p {
+        font-size: 1.2rem;
+    }
+    .main-movie a {
+        font-size: 1.2rem;
+    }
+    .main-movie {
+        flex-direction: column;
+    }
+    .footer-one {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin-bottom: 2%;
+        line-height: 2;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2%;
+        padding-left: 0%;
+        font-size: 1.4rem;
+    }
+    .copy-wright {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    .navigation a {
+        font-size: 1.2rem;
+    }
+    .navigation button .navbar-toggler-icon {
+        font-size: 1.05em;
+    }
+    .navbar-nav a {
+        margin-left: 45%;
+    }
+    .movie-times-main {
+        grid-template-columns: 1fr;
+    }
+    .movie-info {
+        margin-left: 5%;
+    }
+    .marquee-content li {
+        font-size: 2.0rem;
+    }
+    .marquee:before,
+    .marquee:after {
+        top: 200px;
+        position: relative;
+    }
+    img {
+        width: 90%;
+        max-height: 70%;
+        align-self: center;
+    }
+    h4 {
+        font-size: 2.0rem;
+        margin-top: 2%;
+    }
+    .main-movie {
+        flex-direction: column;
+    }
+    .main-movie p {
+        font-size: 1.2rem;
+    }
+    .main-movie a {
+        font-size: 1.2rem;
+    }
+    .footer-one {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin-bottom: 2%;
+        line-height: 2;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2%;
+        padding-left: 0%;
+        font-size: 1.4rem;
+    }
+    .copy-wright {
+        font-size: 1.4rem;
+    }
+}
+
+
+/*====================DESKTOP SIZES============================*/
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+    .navigation a {
+        font-size: 1.2rem;
+    }
+    .navigation button .navbar-toggler-icon {
+        font-size: 1.05em;
+    }
+    .navbar-nav a {
+        margin-left: 45%;
+    }
+    .movie-times-main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .movie-info {
+        margin-left: 5%;
+    }
+    .marquee-content li {
+        font-size: 2.5rem;
+    }
+    .marquee:before,
+    .marquee:after {
+        top: 200px;
+        position: relative;
+    }
+    img {
+        width: 40rem;
+    }
+    h4 {
+        font-size: 2.5rem;
+        margin-top: 2%;
+    }
+    .main-movie p {
+        font-size: 2.2rem;
+    }
+    .main-movie a {
+        font-size: 1.2rem;
+    }
+    .footer span {
+        font-size: 2.2rem;
+    }
+    .footer-one {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin-bottom: 2%;
+        line-height: 2;
+        text-align: center;
+        font-size: 2.2rem;
+    }
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2%;
+        padding-left: 0%;
+        font-size: 2.2rem;
+    }
+    .copy-wright {
+        font-size: 3rem;
+    }
+}
+
+
+/*======================================LARGER SCREEN SIZES===========================================*/
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    .navigation a {
+        font-size: 1.5rem;
+    }
+    .navigation button .navbar-toggler-icon {
+        font-size: 1.05em;
+    }
+    .navbar-nav a {
+        margin-left: 45%;
+    }
+    .movie-times-main {
+        grid-template-columns: 1fr 1fr;
+    }
+    .movie-info {
+        margin-left: 5%;
+    }
+    .marquee-content li {
+        font-size: 3.0rem;
+    }
+    .marquee:before,
+    .marquee:after {
+        top: 200px;
+        position: relative;
+    }
+    img {
+        width: 28rem;
+    }
+    h4 {
+        font-size: 2.5rem;
+        margin-top: 2%;
+    }
+    .main-movie p {
+        font-size: 1.8rem;
+    }
+    .main-movie a {
+        font-size: 1.6rem;
+    }
+    .footer {
+        font-size: 1.5em;
+    }
+    .footer-one {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin-bottom: 2%;
+        line-height: 2;
+        text-align: center;
+    }
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2%;
+        padding-left: 0%;
+        font-size: 1.3em;
+    }
+    .footer-one span {
+        font-size: 1.6em;
+    }
+    .footer-one .navbar-brand {
+        font-size: 1.6em;
+    }
+}
