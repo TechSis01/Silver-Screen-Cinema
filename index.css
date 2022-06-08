@@ -432,8 +432,8 @@ video {
          flex-direction: column;
          align-items: end;
          transform:translateY(-130%);
-         transition:transform 0.5s ease-in
-         
+         transition:transform 0.5s ease-in;
+         width:20%;
      }
      .nav-link a{
          font-size:1.0rem;
