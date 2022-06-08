@@ -44,8 +44,8 @@ body {
 }
 
 .navbar-nav a {
-    gap: 8em;
-    margin-left: 75%;
+    gap: 6em;
+    margin-left: 50%;
 }
 
 .navigation a:hover {
@@ -57,7 +57,8 @@ body {
 
 /*========================ANIMATION=========================================*/
 
-.marquee {
+
+/* .marquee {
     width: 100%;
     height: 20vw;
     margin-top: 5%;
@@ -113,7 +114,7 @@ body {
     font-size: 6.0rem;
     flex-shrink: 0;
     white-space: no-wrap;
-}
+} */
 
 
 /*==================================BOOK A TICKET=============================================*/
@@ -156,7 +157,7 @@ em {
 .choose-time {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-row-gap: 10px;
+    grid-row-gap: 50px;
     font-size: 1.5rem;
 }
 
@@ -450,8 +451,8 @@ form {
     }
     .bookings {
         font-size: 1.5rem;
-        width:80%;
-        padding:2% 5%;
+        width: 80%;
+        padding: 2% 5%;
     }
     .choose-time button {
         font-size: 1.2rem;
@@ -512,29 +513,52 @@ form {
 /*================================DESKTOP SIZES======================================*/
 
 @media only screen and (max-width: 768px) and (min-width: 481px) {
-    .marquee-content li {
-        font-size: 1.8rem;
+    html,
+    body {
+        width: 102%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .navigation span {
+        font-size: 1.5rem;
+        color: #e70404;
+        margin-left: 5%;
     }
     .navigation button .navbar-toggler-icon {
-        font-size: 1.05em;
+        font-size: 2.5em;
     }
     .navbar-nav a {
         margin-left: 45%;
     }
-    .marquee:before,
-    .marquee:after {
-        top: 200px;
-        position: relative;
+    .navigation a {
+        font-size: 1.7em;
     }
-    .bookings h1 {
-        font-size: 2.2rem;
+    .navigation span {
+        font-size: 3.8rem;
+        color: #e70404;
+    }
+    .book-ticket {
+        margin-top: 10%;
     }
     .bookings {
-        font-size: 1.5rem;
+        padding: 5% 5%;
+    }
+    .bookings h1 {
+        font-size: 4.5rem;
+    }
+    .bookings em {
+        font-size: 2.5rem;
+    }
+    .bookings {
+        font-size: 2.5rem;
     }
     .choose-time button {
-        font-size: 1.2rem;
+        font-size: 2.3rem;
         padding: 0.5em;
+    }
+    .choose-time {
+        font-size: 2rem;
     }
     .modal-content {
         width: 80%;
@@ -560,58 +584,61 @@ form {
     #pay {
         font-size: 1.3rem;
     }
+    .footer span {
+        font-size: 4rem;
+    }
+    .navbar-brand {
+        font-size: 3rem;
+    }
     .footer {
         font-family: 'Russo One', sans-serif;
         margin-top: 5%;
+        font-size: 3rem;
     }
     .footer-one {
         display: flex;
         flex-direction: column;
-        padding: 10px;
-        margin-bottom: 2%;
         line-height: 1.5;
         text-align: center;
-        font-size: 1.4rem;
+        font-size: 2.8rem;
     }
     .footer-links {
         display: flex;
         flex-direction: column;
         margin-bottom: 2%;
         padding-left: 0%;
-        font-size: 1.4rem;
+        font-size: 2.5rem;
     }
     .copy-wright {
-        font-size: 1.4rem;
+        font-size: 3rem;
     }
 }
 
 
 /*==========================LARGER SCREENS===============================*/
 
-@media only screen and (max-width: 1560px) and (min-width: 769px) {
-    .marquee-content li {
-        font-size: 1.8rem;
-    }
-    .navigation button .navbar-toggler-icon {
-        font-size: 1.05em;
-    }
-    .navbar-nav a {
-        margin-left: 45%;
-    }
-    .marquee:before,
-    .marquee:after {
-        top: 200px;
-        position: relative;
-    }
-    .bookings h1 {
-        font-size: 2.2rem;
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    .book-ticket {
+        margin-top: 10%;
     }
     .bookings {
-        font-size: 1.5rem;
+        padding: 5% 5%;
+    }
+    .bookings h1 {
+        font-size: 4.5rem;
+    }
+    .bookings em {
+        font-size: 2.5rem;
+    }
+    .bookings {
+        font-size: 2.5rem;
     }
     .choose-time button {
-        font-size: 1.2rem;
+        font-size: 2.5rem;
         padding: 0.5em;
+    }
+    .choose-time {
+        font-size: 2rem;
     }
     .modal-content {
         width: 80%;
@@ -637,27 +664,32 @@ form {
     #pay {
         font-size: 1.3rem;
     }
+    .footer span {
+        font-size: 4rem;
+    }
+    .navbar-brand {
+        font-size: 3rem;
+    }
     .footer {
         font-family: 'Russo One', sans-serif;
         margin-top: 5%;
+        font-size: 3rem;
     }
     .footer-one {
         display: flex;
         flex-direction: column;
-       /* padding: px;
-        margin-bottom:*/
         line-height: 1.5;
         text-align: center;
-        font-size: 1.4rem;
+        font-size: 2.8rem;
     }
     .footer-links {
         display: flex;
         flex-direction: column;
         margin-bottom: 2%;
         padding-left: 0%;
-        font-size: 1.4rem;
+        font-size: 2.5rem;
     }
     .copy-wright {
-        font-size: 1.4rem;
+        font-size: 3rem;
     }
 }
