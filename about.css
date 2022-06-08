@@ -15,7 +15,7 @@
 /*==========================================================NAVIGATION=====================================================*/
 
 .navigation button .navbar-toggler-icon {
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .navigation {
@@ -171,8 +171,8 @@ img {
         color: #e70404;
         margin-left: 5%;
     }
-    .navigation button .navbar-toggler-icon {
-        font-size: 1.05em;
+    .navbar-toggler-icon {
+        font-size: 0.8em;
     }
     .navbar-nav a {
         margin-left: 42%;

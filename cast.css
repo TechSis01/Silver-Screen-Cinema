@@ -14,8 +14,8 @@
 
 /*==========================================================NAVIGATION=====================================================*/
 
-.navigation button .navbar-toggler-icon {
-    font-size: 1.2em;
+.navbar-toggler {
+    font-size: 1em;
 }
 
 .navigation {
@@ -38,7 +38,7 @@
 
 .navigation a {
     color: #A7B3B1;
-    font-size: 1.07em;
+    font-size: 1em;
 }
 
 .navbar-nav a {
