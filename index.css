@@ -355,9 +355,9 @@ video {
          top:30%;
          flex-direction: column;
          align-items: end;
-         transform:translateY(-135%);
+         transform:translateY(-60%);
          transition:transform 0.5s ease-in;
-         width:20%;
+         width:50%;
      }
      .nav-link a{
          font-size:1.0rem;
@@ -454,10 +454,10 @@ video {
          right:0;
          top:30%;
          flex-direction: column;
-         align-items: end;
-         transform:translateX(40%);
+         align-items:flex-start;
+         transform:translateY(-140%);
          transition:transform 0.5s ease-in;
-         width:20%;
+         width:50%;
      }
      .nav-link a{
          font-size:1.0rem;
@@ -730,6 +730,6 @@ video {
      }
  }
  .nav-active{
-    transform:translateX(-10%);
+    transform:translateY(1%);
     transition:transform 0.5s ease-in;
 }
