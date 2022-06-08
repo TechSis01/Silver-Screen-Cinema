@@ -205,10 +205,10 @@ em {
 
 @keyframes modal {
     from {
-        opacity: 0
+        opacity: 0;
     }
     to {
-        opacity: 2
+        opacity: 2;
     }
 }
 
@@ -227,7 +227,7 @@ form {
 
 .input-data input {
     width: 100%;
-    padding: 1% 5%;
+    padding: 0 5%;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -239,9 +239,10 @@ form {
 }
 
 .modal-content {
-    width: 60%;
-    margin: 2% auto;
-    padding: 2% 5%;
+    width:60%;
+    margin:10% auto;
+    
+    padding: 2% 3%;
     box-shadow: 0 10px 10px 9px rgb(38, 36, 36);
 }
 
@@ -588,7 +589,7 @@ form {
 
 /*==========================LARGER SCREENS===============================*/
 
-@media only screen and (max-width: 1560px) and (min-width: 769px) {
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
     .marquee-content li {
         font-size: 1.8rem;
     }
@@ -615,7 +616,7 @@ form {
     }
     .modal-content {
         width: 80%;
-        margin: 40% auto;
+        margin: 12% auto;
         padding: 2% 7%;
     }
     .x {
