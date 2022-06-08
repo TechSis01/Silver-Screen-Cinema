@@ -342,8 +342,25 @@ video {
      span {
          font-size: 0.9rem;
      }
-     .link {
-         font-size: 0.7rem;
+     .brand-screen {
+        font-size:0.9rem;
+    }
+     .nav-link{
+         position:absolute;
+         right:0;
+         top:30%;
+         flex-direction: column;
+         align-items: end;
+         transform:translateY(-135%);
+         transition:transform 0.5s ease-in;
+         width:20%;
+     }
+     .nav-link a{
+         font-size:1.0rem;
+     }
+     .hamburger{
+         display:block;
+         margin-left: 60%;
      }
      .current-movies h3 {
          font-size: 2.0rem;
@@ -425,6 +442,9 @@ video {
     .brand-name {
          font-size: 1.2rem;
      }
+     .brand-screen {
+        font-size:0.9rem;
+    }
      .nav-link{
          position:absolute;
          right:0;
