@@ -450,6 +450,8 @@ form {
     }
     .bookings {
         font-size: 1.5rem;
+        width:80%;
+        padding:2% 5%;
     }
     .choose-time button {
         font-size: 1.2rem;
@@ -587,9 +589,6 @@ form {
 /*==========================LARGER SCREENS===============================*/
 
 @media only screen and (max-width: 1560px) and (min-width: 769px) {
-    body{
-        height:50%;
-    }
     .marquee-content li {
         font-size: 1.8rem;
     }

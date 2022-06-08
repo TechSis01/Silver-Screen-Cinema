@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
     <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Noto+Sans:wght@300&family=Open+Sans:wght@400;500&family=Russo+One&display=swap" rel="stylesheet">
     <!--FONT AWESOME KIT-->
     <script src="https://kit.fontawesome.com/597098b101.js" crossorigin="anonymous"></script>
@@ -15,16 +16,39 @@
 
 <body>
     <div id="preloader"></div>
-    <header>
-        <nav class="nav">
+   <header>
+        <!--<nav class="nav">
             <div class="brand-name">SILVER<span class="brand-screen">SCREEN</span></div>
             <a href="#" class="link">Home</a>
             <div><a href="cast.html" class="link">Cast</a></div>
             <div><a href="./schedule.html" class="link">Schedule</a></div>
             <div><a class="link" href="./about.html">About</a></div>
             </div>
+        </nav>-->
+        <nav >
+            <div class="brand-name">
+                <h4>SILVER<span class="brand-screen">SCREEN</span></h4>
+            </div>
+            <ul class="nav-link">
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./schedule.html">Schedule</a>
+                </li>
+                <li>
+                    <a href="./cast.html">Cast</a>
+                </li>
+                <li>
+                    <a href="./about.html">About</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div  class="line2"></div>
+                <div  class="line3"></div>
+            </div>
         </nav>
-
         <video src="./trailer2.mp4" id="myVideo" autoplay="autoplay" loop></video>
     </header>
     <button onclick="playVid()" class="play-btn"><i class="fa-solid fa-play"></i></button>
@@ -214,7 +238,8 @@
         </section>
     </main>
 
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
+    
 </body>
 
 </html>

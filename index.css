@@ -11,8 +11,62 @@
      position: relative;
  }
  /*========================NAVIGATION=================================*/
- 
- nav {
+ nav{
+     display:flex;
+     justify-content: space-around;
+     align-items: center;
+     position:absolute;
+     z-index:1;
+     width:100%;
+ }
+ .nav-link{
+     display:flex;
+     width:60%;
+     justify-content: space-around;
+     align-items: center;
+ }
+ .nav-link li {
+    list-style: none;
+ }
+ .nav-link a{
+     text-decoration: none;
+     color: #A7B3B1;
+     font-family: 'Russo One', sans-serif;
+     
+
+ }
+ .brand-name{
+    font-family: 'Russo One', sans-serif;
+    font-size: 2.5rem;
+    color: #e70404;
+ }
+ .brand-screen {
+    color: #A7B3B1;
+    font-size:1.8rem;
+}
+video {
+    width: 100%;
+    margin-bottom: 0;
+    z-index: -1;
+    position: relative;
+}
+.hamburger{
+    display:none;
+}
+.hamburger div{
+    width:25px;
+    height:2px;
+    background-color:#A7B3B1;
+    margin:5px;
+}
+.hamburger:hover{
+    cursor:pointer;
+}
+/*.nav-active{
+    transform:translateY(0);
+    transition:transform 0.5s ease-in;
+}*/
+ /*nav {
      display: flex;
      width: 85%;
      margin: 1% 3% 0% 2%;
@@ -70,6 +124,7 @@
      margin-right: 10%;
      color: white;
  }
+*/
  /*==========================================================PAUSE AND PLAY BUTTON========================================================*/
  
  .fa-play {
@@ -364,15 +419,33 @@
  /*=====================================MEDIA QUERIES(SMALL SCREENS)==================================================>*/
  
  @media only screen and (max-width: 480px) and (min-width: 320px) {
-     .brand-name {
+     body{
+         overflow-x: hidden;
+     }
+    .brand-name {
          font-size: 1.2rem;
+     }
+     .nav-link{
+         position:absolute;
+         right:0;
+         top:30%;
+         flex-direction: column;
+         align-items: end;
+         transform:translateY(-130%);
+         transition:transform 0.5s ease-in
+         
+     }
+     .nav-link a{
+         font-size:1.0rem;
+     }
+     .hamburger{
+         display:block;
+         margin-left: 60%;
      }
      span {
          font-size: 0.9rem;
      }
-     .link {
-         font-size: 1.1rem;
-     }
+     
      .current-movies h3 {
          font-size: 2.0rem;
      }
@@ -632,3 +705,7 @@
          left: 80px;
      }
  }
+ .nav-active{
+    transform:translateY(0%);
+    transition:transform 0.5s ease-in;
+}

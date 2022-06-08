@@ -315,12 +315,17 @@
           position: relative;
       }
       img {
-          width: 20rem;
-          max-height: 70%;
+          width: 90%;
+          max-height:70%;
+          align-self: center;
+          
       }
       h4 {
           font-size: 2.0rem;
           margin-top: 2%;
+      }
+      .main-movie{
+          flex-direction: column;
       }
       .main-movie p {
           font-size: 1.2rem;
