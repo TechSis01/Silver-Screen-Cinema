@@ -36,7 +36,6 @@ body {
 .navigation a {
     color: #A7B3B1;
     font-size: 1.07em;
-    font-weight: bold;
 }
 
 .navigation a:hover span {
