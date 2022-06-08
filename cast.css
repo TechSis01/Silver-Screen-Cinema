@@ -20,7 +20,7 @@
 }*/
 
 .navbar-toggler {
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 .navigation {
@@ -43,7 +43,7 @@
 
 .navigation a {
     color: #A7B3B1;
-    font-size: 1em;
+    font-size: 1.09em;
 }
 
 .navbar-nav a {
@@ -253,6 +253,9 @@ progress[value]::-webkit-progress-value {
     }
     .navbar-nav a {
         margin-left: 45%;
+    }
+    .navigation a {
+        font-size: 0.8em;
     }
     .carousel-item img {
         width: 20rem;

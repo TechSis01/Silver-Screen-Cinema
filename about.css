@@ -14,13 +14,8 @@
 
 /*==========================================================NAVIGATION=====================================================*/
 
-
-/*.navigation button .navbar-toggler-icon {
-    font-size: 1.2em;
-}*/
-
-.navbar-toggler {
-    font-size: 1em;
+.navigation button .navbar-toggler-icon {
+    font-size: 1.1em;
 }
 
 .navigation {
@@ -43,7 +38,7 @@
 
 .navigation a {
     color: #A7B3B1;
-    font-size: 1.07em;
+    font-size: 1.1em;
     text-decoration: none;
 }
 
@@ -176,7 +171,7 @@ img {
         color: #e70404;
         margin-left: 5%;
     }
-    .navbar-toggler-icon {
+    .navigation a {
         font-size: 0.8em;
     }
     .navbar-nav a {
@@ -214,9 +209,6 @@ img {
         font-size: 1.5rem;
         color: #e70404;
         margin-left: 5%;
-    }
-    .navigation button .navbar-toggler-icon {
-        font-size: 2.2em;
     }
     .navbar-nav a {
         margin-left: 45%;
