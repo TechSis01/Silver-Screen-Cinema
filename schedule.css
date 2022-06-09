@@ -50,15 +50,12 @@ body {
     color: #e70404;
 }*/
 
-
-/* .navigation button .navbar-toggler-icon {
+/*.navigation button .navbar-toggler-icon {
     font-size: 1.2em;
-} */
-
-.navbar-toggler {
+}*/
+.navbar-toggler{
     font-size: 1em;
 }
-
 .navigation {
     display: flex;
     padding-top: 2%;
@@ -344,9 +341,6 @@ h4 {
     }
     .navigation button .navbar-toggler-icon {
         font-size: 1.05em;
-    }
-    .navigation a {
-        font-size: 0.75em;
     }
     .navbar-nav a {
         margin-left: 45%;
