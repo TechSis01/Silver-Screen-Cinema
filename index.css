@@ -199,6 +199,7 @@
      display: grid;
      grid-template-columns: 1fr 1fr 1fr 1fr;
      padding-top: 5%;
+     padding-left: 3%;
  }
  
  .news-info {
@@ -207,7 +208,9 @@
  
  .news-para {
      color: #ced4da;
-     font-size: 1.3rem;
+     font-size: 1.6rem;
+     width: 94%;
+     line-height: 1.6;
  }
  
  .news h4 {
