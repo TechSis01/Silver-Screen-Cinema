@@ -15,7 +15,7 @@
 /*==========================================================NAVIGATION=====================================================*/
 
 .navigation button .navbar-toggler-icon {
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .navigation {
@@ -37,7 +37,7 @@
 
 .navigation a {
     color: #A7B3B1;
-    font-size: 1.07em;
+    font-size: 1.1em;
     text-decoration: none;
 }
 
@@ -47,7 +47,7 @@
 
 .navbar-nav a {
     gap: 8em;
-    margin-left: 85%;
+    margin-left: 70%;
 }
 
 .navigation a:hover {
@@ -170,8 +170,8 @@ img {
         color: #e70404;
         margin-left: 5%;
     }
-    .navigation button .navbar-toggler-icon {
-        font-size: 1.05em;
+    .navigation a {
+        font-size: 0.8em;
     }
     .navbar-nav a {
         margin-left: 42%;
@@ -189,10 +189,14 @@ img {
         flex-direction: column;
         margin-bottom: 2%;
         padding-left: 0%;
+        font-size: 1.4rem;
     }
     .copy-wright p {
         padding: 0%;
         margin: 0%;
+    }
+    .copy-wright {
+        font-size: 1.4rem;
     }
 }
 
@@ -208,9 +212,6 @@ img {
         font-size: 1.5rem;
         color: #e70404;
         margin-left: 5%;
-    }
-    .navigation button .navbar-toggler-icon {
-        font-size: 2.2em;
     }
     .navbar-nav a {
         margin-left: 45%;
