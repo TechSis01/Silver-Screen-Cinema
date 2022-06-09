@@ -20,10 +20,10 @@
 
 .navigation {
     display: flex;
-    padding-top: 2%;
     font-family: 'Russo One', sans-serif;
     align-items: center;
     color: #A7B3B1;
+    padding: 0.5%;
 }
 
 .navigation span {
@@ -305,4 +305,9 @@ img {
     .copy-wright p {
         font-size: 1.4em;
     }
+}
+
+
+}
+
 }
