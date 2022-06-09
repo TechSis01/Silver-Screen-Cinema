@@ -399,7 +399,7 @@ progress[value]::-webkit-progress-value {
         flex-direction: column;
         margin-bottom: 2%;
         padding-left: 0%;
-        font-size: 1.3em;
+        font-size: 1.4rem;
     }
     .footer-one span {
         font-size: 1.1em;
@@ -413,6 +413,9 @@ progress[value]::-webkit-progress-value {
     .navigation span {
         font-size: 3.8rem;
         color: #5525a3;
+    }
+    .copy-wright {
+        font-size: 1.4rem;
     }
 }
 
